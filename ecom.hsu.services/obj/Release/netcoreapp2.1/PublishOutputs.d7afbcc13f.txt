@@ -1,0 +1,15 @@
+D:\Services\ecom.hsu.vn\ecom.hsu.services\bin\Release\netcoreapp2.1\publish\ecom.hsu.services.dll
+D:\Services\ecom.hsu.vn\ecom.hsu.services\bin\Release\netcoreapp2.1\publish\ecom.hsu.services.deps.json
+D:\Services\ecom.hsu.vn\ecom.hsu.services\bin\Release\netcoreapp2.1\publish\ecom.hsu.services.pdb
+D:\Services\ecom.hsu.vn\ecom.hsu.services\bin\Release\netcoreapp2.1\publish\HtmlAgilityPack.dll
+D:\Services\ecom.hsu.vn\ecom.hsu.services\bin\Release\netcoreapp2.1\publish\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Services\ecom.hsu.vn\ecom.hsu.services\bin\Release\netcoreapp2.1\publish\Newtonsoft.Json.dll
+D:\Services\ecom.hsu.vn\ecom.hsu.services\bin\Release\netcoreapp2.1\publish\Npgsql.dll
+D:\Services\ecom.hsu.vn\ecom.hsu.services\bin\Release\netcoreapp2.1\publish\System.Runtime.CompilerServices.Unsafe.dll
+D:\Services\ecom.hsu.vn\ecom.hsu.services\bin\Release\netcoreapp2.1\publish\System.Text.Encodings.Web.dll
+D:\Services\ecom.hsu.vn\ecom.hsu.services\bin\Release\netcoreapp2.1\publish\System.Text.Json.dll
+D:\Services\ecom.hsu.vn\ecom.hsu.services\bin\Release\netcoreapp2.1\publish\System.Threading.Channels.dll
+D:\Services\ecom.hsu.vn\ecom.hsu.services\bin\Release\netcoreapp2.1\publish\ecom.hsu.database.dll
+D:\Services\ecom.hsu.vn\ecom.hsu.services\bin\Release\netcoreapp2.1\publish\ecom.hsu.dtos.dll
+D:\Services\ecom.hsu.vn\ecom.hsu.services\bin\Release\netcoreapp2.1\publish\ecom.hsu.database.pdb
+D:\Services\ecom.hsu.vn\ecom.hsu.services\bin\Release\netcoreapp2.1\publish\ecom.hsu.dtos.pdb

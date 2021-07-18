@@ -1,0 +1,14 @@
+D:\Services\ecom.hsu.vn\ecom.hsu.services\bin\Debug\netcoreapp2.1\ecom.hsu.services.deps.json
+D:\Services\ecom.hsu.vn\ecom.hsu.services\bin\Debug\netcoreapp2.1\ecom.hsu.services.dll
+D:\Services\ecom.hsu.vn\ecom.hsu.services\bin\Debug\netcoreapp2.1\ecom.hsu.services.pdb
+D:\Services\ecom.hsu.vn\ecom.hsu.services\obj\Debug\netcoreapp2.1\ecom.hsu.services.csproj.CoreCompileInputs.cache
+D:\Services\ecom.hsu.vn\ecom.hsu.services\obj\Debug\netcoreapp2.1\ecom.hsu.services.AssemblyInfoInputs.cache
+D:\Services\ecom.hsu.vn\ecom.hsu.services\obj\Debug\netcoreapp2.1\ecom.hsu.services.AssemblyInfo.cs
+D:\Services\ecom.hsu.vn\ecom.hsu.services\obj\Debug\netcoreapp2.1\ecom.hsu.services.dll
+D:\Services\ecom.hsu.vn\ecom.hsu.services\obj\Debug\netcoreapp2.1\ecom.hsu.services.pdb
+D:\Services\ecom.hsu.vn\ecom.hsu.services\bin\Debug\netcoreapp2.1\ecom.hsu.database.dll
+D:\Services\ecom.hsu.vn\ecom.hsu.services\bin\Debug\netcoreapp2.1\ecom.hsu.dtos.dll
+D:\Services\ecom.hsu.vn\ecom.hsu.services\bin\Debug\netcoreapp2.1\ecom.hsu.database.pdb
+D:\Services\ecom.hsu.vn\ecom.hsu.services\bin\Debug\netcoreapp2.1\ecom.hsu.dtos.pdb
+D:\Services\ecom.hsu.vn\ecom.hsu.services\obj\Debug\netcoreapp2.1\ecom.hsu.services.csproj.CopyComplete
+D:\Services\ecom.hsu.vn\ecom.hsu.services\obj\Debug\netcoreapp2.1\ecom.hsu.services.csprojAssemblyReference.cache

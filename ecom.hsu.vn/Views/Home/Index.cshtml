@@ -1,0 +1,310 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+    int CountBanner = 0;
+    int CountBannerItem = 0;
+}
+@using ecom.hsu.dtos.View;
+<div ng-controller="HomeController">
+    <section id="slider">
+        <div class="container whitesmoke">
+            <div class="row">
+                <div class="col-sm-12 category-header-body no-pad-mar">
+                    <div id="slider-carousel" class="carousel slide mar-top-10" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            @foreach (var item in (List<Banners>)ViewBag.Banners)
+                            {
+                                if (CountBanner == 0)
+                                {
+                                    <li data-target="#slider-carousel" data-slide-to="0" class="active"></li>
+                                }
+                                else
+                                {
+                                    <li data-target="#slider-carousel" data-slide-to="@CountBanner"></li>
+
+                                }
+                                CountBanner++;
+                            }
+                        </ol>
+
+                        <div class="carousel-inner">
+                            @foreach (var item in (List<Banners>)ViewBag.Banners)
+                            {
+                                if (CountBannerItem == 0)
+                                {
+                                    <div class="item active">
+                                        <a href="@item.link"><img src="@item.desktop_url" class="girl img-responsive" alt="" /></a>
+                                    </div>
+                                }
+                                else
+                                {
+                                    <div class="item">
+                                        <a href="@item.link"><img src="@item.desktop_url" class="girl img-responsive" alt="" /></a>
+                                    </div>
+                                }
+                                CountBannerItem++;
+                            }
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="whitesmoke">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 tag-header">
+                    <div class="tag-header-name">DANH MỤC</div>
+                </div>
+
+                @foreach (var cate in (List<Categories_View>)ViewBag.Categories)
+                {
+                    if (ViewBag.DeviceType == "smartphone")
+                    {
+                        <div class="col-sm-12 no-pad-mar">
+                            <div class="home-view">
+                                <div class="object-form-mobile">
+                                    <div class="object-form-name">@cate.name</div>
+                                </div>
+
+                                <div class="mobile-view-scroll">
+                                    @foreach (var item in cate.data)
+                                    {
+                                        <a href="/danh-muc/@item.object_name_id/@item.maingroup_name_id" class="color-unset">
+                                            <div class="category-item-content">
+                                                <img class="category-item-image" src="@item.maingroup_image" />
+                                                <div class="category-item-name">@item.maingroup_name</div>
+                                            </div>
+                                        </a>
+                                    }
+                                </div>
+                            </div>
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="col-sm-12 no-pad-mar">
+                            <div class="home-view">
+                                <div class="object-form-desktop">
+                                    <div class="object-form-name">@cate.name</div>
+                                </div>
+                                <div class="owl-carousel owl-carousel-danh-muc inline-grid">
+                                    @foreach (var item in cate.data)
+                                    {
+                                        <a href="/danh-muc/@item.object_name_id/@item.maingroup_name_id" class="color-unset">
+                                            <div class="category-item-content">
+                                                <img class="category-item-image-des" src="@item.maingroup_image" />
+                                                <div class="category-item-name">@item.maingroup_name</div>
+                                            </div>
+                                        </a>
+                                    }
+                                </div>
+                            </div>
+                        </div>
+
+                    }
+                }
+
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 tag-header">
+                    <div class="tag-header-name">GỢI Ý CHO BẠN</div>
+                </div>
+
+                <div class="col-sm-12 no-pad-mar">
+                    <div class="home-view">
+                        <div class="owl-carousel owl-carousel-gia-soc pointer left">
+                            @foreach (var item in (List<Products>)ViewBag.SuggestForYouProducts)
+                            {
+                                <div class="product-body-home">
+                                    <div class="border-bottom">
+                                        <img src="@item.logo_url" />
+                                    </div>
+                                    <a href="@item.ecom_brand_id">
+                                        <img class="product-image-home" src="@item.image_url" />
+                                    </a>
+                                    <div class="product-name">
+                                        <a href="@item.ecom_brand_id" class="text-black">@item.name</a>
+                                    </div>
+                                    <div class="product-info-body">
+                                        @if (ViewBag.DeviceType == "smartphone")
+                                        {
+                                            <span class="sale-price-mobile">
+                                                @item.sale_price.ToString("#,##0")<span class="font-13">đ</span>
+                                            </span>
+
+                                            if (item.sale_price < item.retail_price)
+                                            {
+                                                <del class="retail-price-mobile">@item.retail_price.ToString("#,##0")đ</del>
+                                                <div class="percent-discount">-@(item.percent)%</div>
+                                            }
+                                        }
+                                        else
+                                        {
+                                            <span class="sale-price">
+                                                @item.sale_price.ToString("#,##0")<span class="font-13">đ</span>
+                                            </span>
+
+                                            if (item.sale_price < item.retail_price)
+                                            {
+                                                <del class="retail-price">@item.retail_price.ToString("#,##0")đ</del>
+                                                <div class="percent-discount">-@(item.percent)%</div>
+                                            }
+                                        }
+                                    </div>
+                                </div>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        @foreach (var pages in (List<LadingPageView>)ViewBag.LandingPageHome)
+        {
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 tag-header">
+                        <div class="tag-header-name">@pages.name</div>
+                        <a class="tags-view-more" href="@pages.link">Xem Tất Cả >></a>
+                    </div>
+
+                    <div class="col-sm-12 no-pad-mar">
+                        <div class="brand-body-home">
+
+                            @if (ViewBag.DeviceType == "smartphone")
+                            {
+                                <div class="brand-content-home">
+                                    @foreach (var brands in pages.brands)
+                                    {
+                                        <a href="thuong-hieu/@brands.name_short">
+                                            <img class="brand-home-mobile" src="@brands.logo_icon" />
+                                        </a>
+                                    }
+                                </div>
+                            }
+                            else
+                            {
+                                <div class="owl-carousel owl-carousel-brands pointer left">
+                                    @foreach (var brands in pages.brands)
+                                    {
+                                        <a href="/thuong-hieu/@brands.name_short"><img class="brand-home" src="@brands.logo_icon" /></a>
+                                    }
+                                </div>
+                            }
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row bg-white">
+                    <div class="no-pad-mar">
+                        @if (ViewBag.DeviceType == "smartphone")
+                        {
+                            foreach (var products in pages.products)
+                            {
+                                <div>
+                                    <a href="@products.ecom_brand_id">
+                                        <div class="product-body-mobile">
+                                            <div class="product-content-moible">
+                                                <div class="border-bottom text-center">
+                                                    <img class="width-100" src="@products.logo_url" />
+                                                </div>
+                                                <img class="product-image-home" src="@products.image_url" />
+                                                <div class="product-name">
+                                                    <a class="text-black">@products.name</a>
+                                                </div>
+                                                <div class="product-info-body">
+                                                    <span class="sale-price-mobile">
+                                                        @products.sale_price.ToString("#,##0")<span class="font-13">đ</span>
+                                                    </span>
+                                                    @if (products.retail_price > products.sale_price)
+                                                    {
+                                                        <del class="retail-price-mobile">@products.retail_price.ToString("#,##0")đ</del>
+                                                        <div class="percent-discount">-@products.percent%</div>
+                                                    }
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            }
+
+                        }
+                        else
+                        {
+                            foreach (var products in pages.products)
+                            {
+                                <div>
+                                    <a href="@products.ecom_brand_id">
+                                        <div class="col-sm-3 pointer left">
+                                            <div class="product-comtent-desktop">
+                                                <div class="border-bottom text-center">
+                                                    <img src="@products.logo_url" />
+                                                </div>
+                                                <img class="product-image-desktop" src="@products.image_url" />
+                                                <div class="product-name"><a class="text-black">@products.name</a></div>
+                                                <div class="product-info-body">
+                                                    <span class="sale-price">
+                                                        @products.sale_price.ToString("#,##0")<span class="font-13">đ</span>
+                                                    </span>
+                                                    @if (products.retail_price > products.sale_price)
+                                                    {
+                                                        <del class="retail-price">@products.retail_price.ToString("#,##0")đ</del>
+                                                        <div class="percent-discount">-@products.percent%</div>
+                                                    }
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            }
+                        }
+
+                        @*<div class="btn-padding">
+                            <button class="btn-see-more">XEM THÊM</button>
+                        </div>*@
+                    </div>
+
+                </div>
+            </div>
+
+
+        }
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div style="margin-top: 20px; font-weight: bold; font-size: 20px;">XXX - WEBSITE MUA SẮM TIN CẬY, TIỆN LỢI, GIÁ TỐT</div>
+                    <div>
+                        xxx - website mua sắm trực tuyến giúp bạn dễ dàng lựa chọn các sản phẩm mong muốn với giá tốt nhất có trên thị trường.
+                        Nơi giúp bạn tìm kiếm sản phẩm, chọn lọc từ kho hàng online của các hãng cung cấp uy tín và tin cậy.
+                    </div>
+                    <div style="margin-top: 20px; font-weight: bold; font-size: 20px;">NHANH CHÓNG VÀ CHÍNH XÁC</div>
+                    <div>
+                        Giá của các sản phẩm được XXX cung cấp luôn luôn chính xác và độ trễ gần như là không có.
+                    </div>
+                    <div style="margin-top: 20px; font-weight: bold; font-size: 20px;">MUA HÀNG CHÍNH HÃNG TỪ CÁC THƯƠNG HIỆU LỚN VỚI XXX</div>
+                    <div>
+                        Bạn sẽ ấn tượng khi mua hàng trên XXX
+                    </div>
+                    <div style="margin-top: 20px; font-weight: bold; font-size: 20px;">NÓI KHÔNG VỚI HÀNG FAKE, HÀNG KÉM CHẤT LƯỢNG</div>
+                    <div>
+                        XXX cung cấp các sản phẩm có thương hiệu rõ ràng và minh bạch với giá rất tốt nên khách hàng có thể tin tưởng tuyệt đối khi mua hàng trên XXX mà không sợ mua phải các sản phẩm không chính hãng với chất lượng kém.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+</div>
+

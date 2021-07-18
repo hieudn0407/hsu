@@ -1,0 +1,139 @@
+﻿
+@{
+    ViewData["Title"] = "Search";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+    string keysearch = ViewBag.SearchPlaceholder;
+
+    if (ViewBag.DeviceType == "smartphone" && keysearch.Length > 30)
+    {
+        ViewBag.SearchPlaceholder = keysearch.Substring(0, 30) + "...";
+    }
+}
+@using ecom.hsu.dtos.View;
+<section ng-controller="SearchController" class="whitesmoke">
+
+    <div class="container">
+        <div class="row bg-white">
+            @if (ViewBag.DeviceType == "smartphone")
+            {
+                <div style="padding: 8px 5px; font-size: 15px;"><i>Kết quả cho từ khóa</i> '<a style="color: red;">@keysearch</a>'</div>
+            }
+            else
+            {
+                <div style="padding: 15px; font-size: 18px;"><i>Kết quả cho từ khóa</i> '<a style="color: red;">@keysearch</a>'</div>
+            }
+
+            <div class="no-pad-mar">
+                @if (ViewBag.DeviceType == "smartphone")
+                {
+                    <div ng-repeat="item in SearchData">
+                        <a href="{{item.ecom_brand_id}}">
+                            <div class="product-body-mobile">
+                                <div class="product-content-moible">
+                                    <div class="border-bottom text-center">
+                                        <img class="width-100" ng-src="{{item.logo_url}}" />
+                                    </div>
+                                    <img class="product-image-home" ng-src="{{item.image_url}}" />
+                                    <div class="product-name">
+                                        <a class="text-black">{{item.name}}</a>
+                                    </div>
+                                    <div class="product-info-body">
+                                        <span class="sale-price-mobile">
+                                            {{item.sale_price | currency : "" : 0}}<span class="font-13">đ</span>
+                                        </span>
+                                        <del ng-show="item.retail_price > item.sale_price" class="retail-price-mobile">{{item.retail_price | currency : "" : 0}}đ</del>
+                                        <div ng-show="item.retail_price > item.sale_price" class="percent-discount">-{{item.percent}}%</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                }
+                else
+                {
+                    <div ng-repeat="item in SearchData">
+                        <a href="{{item.ecom_brand_id}}">
+                            <div class="col-sm-3 pointer left">
+                                <div class="product-comtent-desktop">
+                                    <div class="border-bottom text-center">
+                                        <img ng-src="{{item.logo_url}}" />
+                                    </div>
+                                    <img class="product-image-desktop" ng-src="{{item.image_url}}" />
+                                    <div class="product-name"><a class="text-black">{{item.name}}</a></div>
+                                    <div class="product-info-body">
+                                        <span class="sale-price">
+                                            {{item.sale_price | currency : "" : 0}}<span class="font-13">đ</span>
+                                        </span>
+                                        <del ng-show="item.retail_price > item.sale_price" class="retail-price">{{item.retail_price | currency : "" : 0}}đ</del>
+                                        <div ng-show="item.retail_price > item.sale_price" class="percent-discount">-{{item.percent}}%</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="whitesmoke">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 tag-header">
+                <div class="tag-header-name">DANH MỤC</div>
+            </div>
+
+            @foreach (var cate in (List<Categories_View>)ViewBag.Categories)
+            {
+                if (ViewBag.DeviceType == "smartphone")
+                {
+                    <div class="col-sm-12 no-pad-mar">
+                        <div class="home-view">
+                            <div class="object-form-mobile">
+                                <div class="object-form-name">@cate.name</div>
+                            </div>
+
+                            <div class="mobile-view-scroll">
+                                @foreach (var item in cate.data)
+                                {
+                                    <a href="/danh-muc/@item.object_name_id/@item.maingroup_name_id" class="color-unset">
+                                        <div class="category-item-content">
+                                            <img class="category-item-image" src="@item.maingroup_image" />
+                                            <div class="category-item-name">@item.maingroup_name</div>
+                                        </div>
+                                    </a>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                }
+                else
+                {
+                    <div class="col-sm-12 no-pad-mar">
+                        <div class="home-view">
+                            <div class="object-form-desktop">
+                                <div class="object-form-name">@cate.name</div>
+                            </div>
+                            <div class="owl-carousel owl-carousel-danh-muc inline-grid">
+                                @foreach (var item in cate.data)
+                                {
+                                    <a href="/danh-muc/@item.object_name_id/@item.maingroup_name_id" class="color-unset">
+                                        <div class="category-item-content">
+                                            <img class="category-item-image-des" src="@item.maingroup_image" />
+                                            <div class="category-item-name">@item.maingroup_name</div>
+                                        </div>
+                                    </a>
+                                }
+                            </div>
+                        </div>
+                    </div>
+
+                }
+            }
+
+        </div>
+    </div>
+</section>
+

@@ -1,0 +1,143 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <UserSecretsId>b0f83921-8a97-447d-9889-5213ca92ed9a</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="bundleconfig.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="bundleconfig.json" />
+    <None Include="wwwroot\Content\animate.css" />
+    <None Include="wwwroot\Content\bootstrap.min.css" />
+    <None Include="wwwroot\Content\docs.theme.min.css" />
+    <None Include="wwwroot\Content\font-awesome.min.css" />
+    <None Include="wwwroot\Content\main.css" />
+    <None Include="wwwroot\Content\owl.carousel.min.css" />
+    <None Include="wwwroot\Content\owl.theme.default.min.css" />
+    <None Include="wwwroot\Content\prettyPhoto.css" />
+    <None Include="wwwroot\Content\price-range.css" />
+    <None Include="wwwroot\Content\responsive.css" />
+    <None Include="wwwroot\Content\storemy.css" />
+    <None Include="wwwroot\Content\storemy.min.css" />
+    <None Include="wwwroot\Content\style.css" />
+    <None Include="wwwroot\fonts\fontawesome-webfont.svg" />
+    <None Include="wwwroot\fonts\fontawesome-webfont.woff" />
+    <None Include="wwwroot\fonts\FontAwesome.otf" />
+    <None Include="wwwroot\fonts\glyphicons-halflings-regular.svg" />
+    <None Include="wwwroot\fonts\glyphicons-halflings-regular.woff" />
+    <None Include="wwwroot\Images\404\404.png" />
+    <None Include="wwwroot\Images\blog\blog-one.jpg" />
+    <None Include="wwwroot\Images\blog\blog-three.jpg" />
+    <None Include="wwwroot\Images\blog\blog-two.jpg" />
+    <None Include="wwwroot\Images\blog\man-four.jpg" />
+    <None Include="wwwroot\Images\blog\man-one.jpg" />
+    <None Include="wwwroot\Images\blog\man-three.jpg" />
+    <None Include="wwwroot\Images\blog\man-two.jpg" />
+    <None Include="wwwroot\Images\blog\socials.png" />
+    <None Include="wwwroot\Images\brand\adidas.jpg" />
+    <None Include="wwwroot\Images\brand\brand_adidas.jpg" />
+    <None Include="wwwroot\Images\brand\brand_efora.jpg" />
+    <None Include="wwwroot\Images\brand\brand_kwin.jpg" />
+    <None Include="wwwroot\Images\brand\brand_mayshouse.jpg" />
+    <None Include="wwwroot\Images\brand\brand_sablanca.jpg" />
+    <None Include="wwwroot\Images\brand\brand_sevenam.jpg" />
+    <None Include="wwwroot\Images\brand\brand_shopceleb.jpg" />
+    <None Include="wwwroot\Images\brand\brand_vascara.jpg" />
+    <None Include="wwwroot\Images\brand\efora.jpg" />
+    <None Include="wwwroot\Images\brand\kwin.jpg" />
+    <None Include="wwwroot\Images\brand\mayshouse.jpg" />
+    <None Include="wwwroot\Images\brand\sablanca.jpg" />
+    <None Include="wwwroot\Images\brand\sevenam.jpg" />
+    <None Include="wwwroot\Images\brand\shopceleb.jpg" />
+    <None Include="wwwroot\Images\brand\vascara.jpg" />
+    <None Include="wwwroot\Images\cart\one.png" />
+    <None Include="wwwroot\Images\cart\three.png" />
+    <None Include="wwwroot\Images\cart\two.png" />
+    <None Include="wwwroot\Images\cate\ao-nu.png" />
+    <None Include="wwwroot\Images\home\back-icon.png" />
+    <None Include="wwwroot\Images\home\bg_border.png" />
+    <None Include="wwwroot\Images\home\filter.jpg" />
+    <None Include="wwwroot\Images\home\gallery1.jpg" />
+    <None Include="wwwroot\Images\home\gallery2.jpg" />
+    <None Include="wwwroot\Images\home\gallery3.jpg" />
+    <None Include="wwwroot\Images\home\gallery4.jpg" />
+    <None Include="wwwroot\Images\home\girl1.jpg" />
+    <None Include="wwwroot\Images\home\girl2.jpg" />
+    <None Include="wwwroot\Images\home\girl3.jpg" />
+    <None Include="wwwroot\Images\home\iframe1.png" />
+    <None Include="wwwroot\Images\home\iframe2.png" />
+    <None Include="wwwroot\Images\home\iframe3.png" />
+    <None Include="wwwroot\Images\home\iframe4.png" />
+    <None Include="wwwroot\Images\home\logo.png" />
+    <None Include="wwwroot\Images\home\map.png" />
+    <None Include="wwwroot\Images\home\new.png" />
+    <None Include="wwwroot\Images\home\partner1.png" />
+    <None Include="wwwroot\Images\home\partner2.png" />
+    <None Include="wwwroot\Images\home\partner3.png" />
+    <None Include="wwwroot\Images\home\partner4.png" />
+    <None Include="wwwroot\Images\home\pricing.png" />
+    <None Include="wwwroot\Images\home\product1.jpg" />
+    <None Include="wwwroot\Images\home\product2.jpg" />
+    <None Include="wwwroot\Images\home\product3.jpg" />
+    <None Include="wwwroot\Images\home\product4.jpg" />
+    <None Include="wwwroot\Images\home\product5.jpg" />
+    <None Include="wwwroot\Images\home\product6.jpg" />
+    <None Include="wwwroot\Images\home\recommend1.jpg" />
+    <None Include="wwwroot\Images\home\recommend2.jpg" />
+    <None Include="wwwroot\Images\home\recommend3.jpg" />
+    <None Include="wwwroot\Images\home\sale.png" />
+    <None Include="wwwroot\Images\home\searchicon.png" />
+    <None Include="wwwroot\Images\home\shipping.jpg" />
+    <None Include="wwwroot\Images\product-details\1.jpg" />
+    <None Include="wwwroot\Images\product-details\new.jpg" />
+    <None Include="wwwroot\Images\product-details\rating.png" />
+    <None Include="wwwroot\Images\product-details\share.png" />
+    <None Include="wwwroot\Images\product-details\similar1.jpg" />
+    <None Include="wwwroot\Images\product-details\similar2.jpg" />
+    <None Include="wwwroot\Images\product-details\similar3.jpg" />
+    <None Include="wwwroot\Images\shop\advertisement.jpg" />
+    <None Include="wwwroot\Images\shop\product10.jpg" />
+    <None Include="wwwroot\Images\shop\product11.jpg" />
+    <None Include="wwwroot\Images\shop\product12.jpg" />
+    <None Include="wwwroot\Images\shop\product7.jpg" />
+    <None Include="wwwroot\Images\shop\product8.jpg" />
+    <None Include="wwwroot\Images\shop\product9.jpg" />
+    <None Include="wwwroot\Images\sub\sub-ao-len-nu.jpg" />
+    <None Include="wwwroot\Scripts\angular.min.js" />
+    <None Include="wwwroot\Scripts\bootstrap.min.js" />
+    <None Include="wwwroot\Scripts\contact.js" />
+    <None Include="wwwroot\Scripts\controller\ProductsController.js" />
+    <None Include="wwwroot\Scripts\gmaps.js" />
+    <None Include="wwwroot\Scripts\html5shiv.js" />
+    <None Include="wwwroot\Scripts\jquery.js" />
+    <None Include="wwwroot\Scripts\jquery.min.js" />
+    <None Include="wwwroot\Scripts\jquery.prettyPhoto.js" />
+    <None Include="wwwroot\Scripts\jquery.scrollUp.min.js" />
+    <None Include="wwwroot\Scripts\main.js" />
+    <None Include="wwwroot\Scripts\owl.carousel.js" />
+    <None Include="wwwroot\Scripts\owl.carousel.min.js" />
+    <None Include="wwwroot\Scripts\price-range.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DeviceDetector.NET" Version="4.2.0" />
+    <PackageReference Include="HtmlAgilityPack" Version="1.11.34" />
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.4.10" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.9" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="Npgsql" Version="5.0.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ecom.hsu.dtos\ecom.hsu.dtos.csproj" />
+    <ProjectReference Include="..\ecom.hsu.services\ecom.hsu.services.csproj" />
+  </ItemGroup>
+
+</Project>
