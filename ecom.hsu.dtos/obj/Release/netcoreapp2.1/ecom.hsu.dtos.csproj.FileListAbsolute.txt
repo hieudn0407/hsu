@@ -1,9 +1,0 @@
-D:\Services\ecom.hsu.vn\ecom.hsu.dtos\bin\Release\netcoreapp2.1\ecom.hsu.dtos.deps.json
-D:\Services\ecom.hsu.vn\ecom.hsu.dtos\bin\Release\netcoreapp2.1\ecom.hsu.dtos.dll
-D:\Services\ecom.hsu.vn\ecom.hsu.dtos\bin\Release\netcoreapp2.1\ecom.hsu.dtos.pdb
-D:\Services\ecom.hsu.vn\ecom.hsu.dtos\obj\Release\netcoreapp2.1\ecom.hsu.dtos.csprojAssemblyReference.cache
-D:\Services\ecom.hsu.vn\ecom.hsu.dtos\obj\Release\netcoreapp2.1\ecom.hsu.dtos.AssemblyInfoInputs.cache
-D:\Services\ecom.hsu.vn\ecom.hsu.dtos\obj\Release\netcoreapp2.1\ecom.hsu.dtos.AssemblyInfo.cs
-D:\Services\ecom.hsu.vn\ecom.hsu.dtos\obj\Release\netcoreapp2.1\ecom.hsu.dtos.csproj.CoreCompileInputs.cache
-D:\Services\ecom.hsu.vn\ecom.hsu.dtos\obj\Release\netcoreapp2.1\ecom.hsu.dtos.dll
-D:\Services\ecom.hsu.vn\ecom.hsu.dtos\obj\Release\netcoreapp2.1\ecom.hsu.dtos.pdb
