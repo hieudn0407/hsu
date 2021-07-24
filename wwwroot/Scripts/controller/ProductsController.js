@@ -19,6 +19,11 @@ var reload_aff = () => {
         new_tab: 1
     };
     (function () {
+        var tags = document.getElementsByTagName("a");
+        for (var e = 0; e < tags.length; e++) {
+            var new_element = tags[e].cloneNode(true);
+            tags[e].parentNode.replaceChild(new_element, tags[e]);
+        }
         var script = document.createElement('script');
         script.src = '//static.accesstrade.vn/js/atsmarttag.min.js?v=1.1.0';
         script.type = 'text/javascript';
@@ -304,7 +309,7 @@ app.controller('CategoryController', ['$scope', '$timeout', '$http', function ($
     var url = "/Category/";
 
     var page = 1;
-    var limit = 12;
+    var limit = 16;
     var temp = "all";
     var temp_detail = null;
     var reload = true;
@@ -443,13 +448,15 @@ app.controller('CategoryController', ['$scope', '$timeout', '$http', function ($
 
                         //Load lại scripts của aff để tao link cho sản phẩm
                         reload_aff();
+
+                        reload = true;
+                        console.log(__atsmarttag);
                     }
                 }
             }, function (error) {
                 console.log(error.statusText);
             });
 
-            reload = true;
         }
     });
 
