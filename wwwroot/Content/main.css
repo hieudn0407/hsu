@@ -3180,6 +3180,7 @@ a {
 .category-item-name {
     text-align: center;
     padding: 5px;
+    font-size: 12px;
 }
 
 .category-item-content {
@@ -3356,6 +3357,7 @@ a {
 .product-image-desktop {
     width: 100%;
     height: 330px;
+    display: block;
 }
 
 .product-info-body {
