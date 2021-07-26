@@ -21,8 +21,10 @@ var reload_aff = () => {
     (function () {
         var tags = document.getElementsByTagName("a");
         for (var e = 0; e < tags.length; e++) {
-            var new_element = tags[e].cloneNode(true);
-            tags[e].parentNode.replaceChild(new_element, tags[e]);
+            if (tags[e].id != "scrollUp") {
+                var new_element = tags[e].cloneNode(true);
+                tags[e].parentNode.replaceChild(new_element, tags[e]);
+            }
         }
         var script = document.createElement('script');
         script.src = '//static.accesstrade.vn/js/atsmarttag.min.js?v=1.1.0';
@@ -30,10 +32,6 @@ var reload_aff = () => {
         script.async = true;
         (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
     })();
-};
-
-var RGBChange = function () {
-    $('#RGB').css('background', 'rgb(' + r.getValue() + ',' + g.getValue() + ',' + b.getValue() + ')')
 };
 
 $(document).ready(function () {
@@ -86,8 +84,14 @@ $(document).ready(function () {
         $(this).addClass("landing-tags-body-active");
 
         var top = document.getElementById("landing-products-tags").offsetHeight;
-        console.log(top);
-        window.scrollTo({ top: top, left: 0, behavior: 'smooth' });   
+        //window.scrollTo({ top: top, left: 0, behavior: 'smooth' });   
+
+        window.scroll({
+            behavior: "smooth",
+            block: "start",
+            top: top,
+            left: 0
+        });
     });
 });
 
