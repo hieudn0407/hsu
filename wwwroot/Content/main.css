@@ -3208,7 +3208,7 @@ a {
 
 .category-item-image-des {
     height: 90px;
-    width: 100px;
+    width: 100px !important;
 }
 
 .sale-price {
@@ -3345,26 +3345,33 @@ a {
 
 .product-body-home {
     float: left;
-    height: 370px;
+    height: 355px;
     width: 100%;
-    border: 1px solid #dcdcdc;
+    /*border: 1px solid #dcdcdc;*/
 }
 
 .product-image-home {
     width: 100%;
-    height: 270px;
+    height: 300px;
+    border: 1px solid gainsboro;
+}
+
+.product-image-home-m {
+    width: 100%;
+    height: 260px;
+    border: 1px solid gainsboro;
 }
 
 .product-image-desktop {
     width: 100%;
-    height: 330px;
+    height: 350px;
     display: block;
     border: 1px solid gainsboro;
 }
 
 .product-info-body {
     height: 30px;
-    margin-top: 15px;
+    margin-top: 5px;
 }
 
 .product-name {
@@ -3429,15 +3436,15 @@ a {
 
 .product-content-moible {
     float: left;
-    height: 370px;
+    height: 320px;
     width: 100%;
-    border: 1px solid #dcdcdc;
+    /*border: 1px solid #dcdcdc;*/
     margin: 5px 0 5px 0px;
 }
 
 .product-comtent-desktop {
     float: left;
-    height: 430px;
+    height: 420px;
     width: 100%;
     /*border: 1px solid #dcdcdc;*/
     margin: 5px 0 5px 0px;
@@ -3865,10 +3872,18 @@ a {
 }
 
 .product-icon-brand {
-    width: 80px;
+    width: 80px !important;
     position: absolute;
-    bottom: 110px;
+    bottom: 80px;
     right: 20px;
+    border: 1px solid #dcdcdc;
+}
+
+.product-icon-brand-m {
+    width: 80px !important;
+    position: absolute;
+    bottom: 3px;
+    right: 3px;
     border: 1px solid #dcdcdc;
 }
 
