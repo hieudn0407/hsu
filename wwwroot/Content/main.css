@@ -955,7 +955,7 @@ ul.sub-menu {
     }
 
         .navbar-nav li ul.sub-menu li a:hover {
-            color: #FDB45E;
+            /*color: #FDB45E;*/
         }
 
 .fa-angle-down {
@@ -1639,10 +1639,10 @@ h2.title {
         /*background: #40403E;
   border-bottom: 1px solid #FE980F;*/
         list-style: none outside none;
-        margin: 0 0 30px;
+        margin: 0 0 5px;
         padding: 0;
         width: 100%;
-        height: 36px;
+        height: 40px;
     }
 
         .category-tab ul li a {
@@ -1651,16 +1651,15 @@ h2.title {
             color: #b5b5b5;
             display: block;
             font-family: 'Roboto', sans-serif;
-            font-size: 13px;
-            text-transform: uppercase;
+            font-size: 15px;
             border: 1px solid white;
             border-bottom: transparent;
-            padding: 8px 15px;
+            padding: 7px 15px;
         }
 
             .category-tab ul li a:hover {
-                /*background:#FE980F;
-	color:#fff;*/
+                /*background:#FE980F; 
+                  color:#fff;*/
             }
 
 .nav-tabs li.active a, .nav-tabs li.active a:hover, .nav-tabs li.active a:focus {
@@ -1672,8 +1671,8 @@ h2.title {
     /*border: 0px;*/
     color: #ff0000;
     cursor: default;
-    border: 1px solid #f00;
-    border-bottom-color: transparent;
+    border: none;
+    /*border-bottom-color: transparent;*/
     /*margin-right: 0;
     margin-left: 0;*/
 }
@@ -3460,7 +3459,7 @@ a {
 
 .nav-border {
     display: flex;
-    border-bottom: 1px solid #f00;
+    border-bottom: 1px solid gainsboro;
     padding: 0px 5px !important;
 }
 
@@ -3922,4 +3921,63 @@ a {
 
 .logo-page {
     width: 120px;
+}
+
+.nav-tab-item {
+    border: none;
+}
+
+.nav-tab-items:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    margin-top: -6px;
+    right: 0;
+    width: 1px;
+    height: 12px;
+    background: rgba(0,0,0,.12);
+}
+
+.nav-tab-items-active:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    margin-top: -6px;
+    right: 0;
+    width: 1px;
+    height: 12px;
+    background: rgba(0,0,0,.12);
+}
+
+/*.nav > li > a:hover, .nav > li > a:focus{
+    background: unset !important;
+    border: none !important;
+}*/
+
+.nav-tabs > li > a:hover {
+    background: unset !important;
+    border: none !important;
+    border-color: unset;
+    padding: 8px 15px;
+}
+
+.nav > li > a:hover, .nav > li > a:focus {
+    background: unset !important;
+}
+
+.nav-tabs > li > a:after {
+    border: none !important;
+}
+
+.nav-tab-items-active {
+    border-bottom: 2px solid red;
+}
+
+    .nav-tab-items-active a {   
+        color: red !important;
+    }
+
+.transform-180 {
+    transform: rotateX(180deg);
+    -webkit-transform: rotate(180deg);
 }

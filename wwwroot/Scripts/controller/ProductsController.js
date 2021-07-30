@@ -1,6 +1,7 @@
 ﻿"use strict";
 
 var app = angular.module("StoreM", []).run();
+var price = 'up';
 
 var deviceType = () => {
     const ua = navigator.userAgent;
@@ -74,9 +75,59 @@ $(document).ready(function () {
         $(this).addClass('filter-brand-img');
     });
 
-    $(document).on('click', '.nav-tab-item', function () {
-        $(".nav-tab-item").removeClass('active');
-        $(this).addClass('active');
+    $(document).on('click', '.nav-tab-items', function () {
+        var html = '';
+        price = 'down';
+        html += '<g stroke="none" stroke-width="1" fill-rule="evenodd">';
+        html += '<g id="upfront_filter_specs" transform="translate(-345.000000, -97.000000)">';
+        html += '<g id="icon_grey" transform="translate(343.000000, 96.000000)">';
+        html += '<g id="Group-12" stroke-width="1" transform="translate(2.500000, 1.000000)">';
+        html += '<g id="Group-11" fill-rule="nonzero">';
+        html += '<path d="M3.13751228,3.74264069 L0.150147331,0.853553391 C-0.0500491103,0.658291245 -0.0500491103,0.341708755 0.150147331,0.146446609 C0.350343772,-0.0488155365 0.674926335,-0.0488155365 0.875122776,0.146446609 L3.5,2.68497122 L6.12487722,0.146446609 C6.32507367,-0.0488155365 6.64965623,-0.0488155365 6.84985267,0.146446609 C7.05004911,0.341708755 7.05004911,0.658291245 6.84985267,0.853553391 L3.86248772,3.74264069 C3.66229128,3.93790283 3.33770872,3.93790283 3.13751228,3.74264069 Z" transform="translate(3.500000, 1.944544) scale(1, -1) translate(-3.500000, -1.944544) "></path>';
+        html += '</g>';
+        html += '<g transform="translate(3.500000, 8.000000) scale(1, -1) translate(-3.500000, -8.000000) translate(0.000000, 6.000000)" fill-rule="nonzero">';
+        html += '<path d="M3.13751228,3.74264069 L0.150147331,0.853553391 C-0.0500491103,0.658291245 -0.0500491103,0.341708755 0.150147331,0.146446609 C0.350343772,-0.0488155365 0.674926335,-0.0488155365 0.875122776,0.146446609 L3.5,2.68497122 L6.12487722,0.146446609 C6.32507367,-0.0488155365 6.64965623,-0.0488155365 6.84985267,0.146446609 C7.05004911,0.341708755 7.05004911,0.658291245 6.84985267,0.853553391 L3.86248772,3.74264069 C3.66229128,3.93790283 3.33770872,3.93790283 3.13751228,3.74264069 Z" transform="translate(3.500000, 1.944544) scale(1, -1) translate(-3.500000, -1.944544) "></path>';
+        html += '</g></g></g></g></g>';
+        $('#svg_price').html(html);
+        $('#svg_price').removeAttr('class');
+
+        $('.nav-tab-items-active').addClass('nav-tab-items');
+        $('.nav-tab-items-active').removeClass('nav-tab-items-active');
+        $(this).addClass('nav-tab-items-active');
+    });
+
+    $(document).on('click', '.nav-item-price', function () {
+        var html = '';
+        if (price == 'down') {
+            price = 'up';
+
+            html += '<g stroke="none" stroke-width="1" fill-rule="evenodd">';
+            html += '<g transform="translate(-344.000000, -97.000000)">';
+            html += '<g transform="translate(303.000000, 94.000000)">';
+            html += '<g transform="translate(40.000000, 2.000000)">';
+            html += '<path d="M6.37298892,10.8430734 C6.27951893,10.9396946 6.14701198,11 6.000064,11 C5.85438692,11 5.72290214,10.9407332 5.62957298,10.8455722 L1.65014733,6.96422851 C1.44995089,6.76896637 1.44995089,6.45238388 1.65014733,6.25712173 C1.85034377,6.06185959 2.17492633,6.06185959 2.37512278,6.25712173 L5.48742894,9.29271806 L5.48742894,1.5 C5.48742894,1.22385763 5.71694348,1 6.000064,1 C6.28318452,1 6.51269905,1.22385763 6.51269905,1.5 L6.51269905,9.29259322 L9.62487722,6.25712173 C9.82507367,6.06185959 10.1496562,6.06185959 10.3498527,6.25712173 C10.5500491,6.45238388 10.5500491,6.76896637 10.3498527,6.96422851 L6.37298892,10.8430734 Z" fill-rule="nonzero"></path>';
+            html += '</g></g></g></g>';
+
+            $('#svg_price').removeAttr('class');
+        }
+        else {
+            price = 'down';
+
+            html += '<g stroke="none" stroke-width="1" fill-rule="evenodd">';
+            html += '<g transform="translate(-344.000000, -97.000000)">';
+            html += '<g transform="translate(303.000000, 94.000000)">';
+            html += '<g transform="translate(40.000000, 2.000000)">';
+            html += '<path d="M6.37298892,10.8430734 C6.27951893,10.9396946 6.14701198,11 6.000064,11 C5.85438692,11 5.72290214,10.9407332 5.62957298,10.8455722 L1.65014733,6.96422851 C1.44995089,6.76896637 1.44995089,6.45238388 1.65014733,6.25712173 C1.85034377,6.06185959 2.17492633,6.06185959 2.37512278,6.25712173 L5.48742894,9.29271806 L5.48742894,1.5 C5.48742894,1.22385763 5.71694348,1 6.000064,1 C6.28318452,1 6.51269905,1.22385763 6.51269905,1.5 L6.51269905,9.29259322 L9.62487722,6.25712173 C9.82507367,6.06185959 10.1496562,6.06185959 10.3498527,6.25712173 C10.5500491,6.45238388 10.5500491,6.76896637 10.3498527,6.96422851 L6.37298892,10.8430734 Z" fill-rule="nonzero"></path>';
+            html += '</g></g></g></g>';
+
+            $('#svg_price').attr('class', 'transform-180');
+        }
+
+        $('#svg_price').html(html);
+        $('.nav-tab-items-active').addClass('nav-tab-items');
+        $('.nav-tab-items-active').removeClass('nav-tab-items-active');
+        $(this).addClass('nav-tab-items-active');
+        $(this).removeClass('nav-tab-items');
     });
 
     $(".landing-tags").click(function () {
@@ -84,7 +135,6 @@ $(document).ready(function () {
         $(this).addClass("landing-tags-body-active");
 
         var top = document.getElementById("landing-products-tags").offsetHeight;
-        //window.scrollTo({ top: top, left: 0, behavior: 'smooth' });   
 
         window.scroll({
             behavior: "smooth",
@@ -319,6 +369,10 @@ app.controller('CategoryController', ['$scope', '$timeout', '$http', function ($
     var reload = true;
 
     $scope.get = (filter, filter_detail) => {
+        if (filter == 'sale') {
+            filter = price;
+        }
+
         temp = filter;
         if (filter_detail == undefined) {
             filter_detail = temp_detail;
@@ -454,7 +508,6 @@ app.controller('CategoryController', ['$scope', '$timeout', '$http', function ($
                         reload_aff();
 
                         reload = true;
-                        console.log(__atsmarttag);
                     }
                 }
             }, function (error) {
@@ -480,6 +533,10 @@ app.controller('CategoryDetailController', ['$scope', '$timeout', '$http', funct
     var temp_detail = null;
 
     $scope.get = (filter, filter_detail) => {
+        if (filter == 'sale') {
+            filter = price;
+        }
+
         temp = filter;
         if (filter_detail == undefined) {
             filter_detail = temp_detail;
