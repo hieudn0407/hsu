@@ -531,6 +531,8 @@ app.controller('CategoryDetailController', ['$scope', '$timeout', '$http', funct
     var limit = 12;
     var temp = "all";
     var temp_detail = null;
+    var reload = true;
+
 
     $scope.get = (filter, filter_detail) => {
         if (filter == 'sale') {
@@ -601,8 +603,8 @@ app.controller('CategoryDetailController', ['$scope', '$timeout', '$http', funct
     };
 
     $(window).scroll(function () {
-        if ($(window).scrollTop() > $(document).height() - $(window).height() - 100) {
-
+        if ($(window).scrollTop() > $(document).height() - $(window).height() - 100 && reload == true) {
+            reload = false;
             page++;
 
             var data_request = {
@@ -621,6 +623,8 @@ app.controller('CategoryDetailController', ['$scope', '$timeout', '$http', funct
 
                         //Load lại scripts của aff để tao link cho sản phẩm
                         reload_aff();
+
+                        reload = true;
                     }
                 }
             }, function (error) {
@@ -641,8 +645,13 @@ app.controller('BrandController', ['$scope', '$timeout', '$http', function ($sco
     var limit = 12;
     var temp = "all";
     var temp_detail = null;
+    var reload = true;
 
     $scope.get = (filter, filter_detail) => {
+        if (filter == 'sale') {
+            filter = price;
+        }
+
         temp = filter;
         if (filter_detail == undefined) {
             filter_detail = temp_detail;
@@ -754,8 +763,8 @@ app.controller('BrandController', ['$scope', '$timeout', '$http', function ($sco
     }
 
     $(window).scroll(function () {
-        if ($(window).scrollTop() > $(document).height() - $(window).height() - 100) {
-
+        if ($(window).scrollTop() > $(document).height() - $(window).height() - 100 && reload == true) {
+            reload = false;
             page++;
 
             var data_request = {
@@ -774,6 +783,8 @@ app.controller('BrandController', ['$scope', '$timeout', '$http', function ($sco
 
                         //Load lại scripts của aff để tao link cho sản phẩm
                         reload_aff();
+
+                        reload = true;
                     }
                 }
             }, function (error) {
@@ -796,6 +807,7 @@ app.controller('BrandSubgroupController', ['$scope', '$timeout', '$http', functi
     var limit = 12;
     var temp = "all";
     var temp_detail = null;
+    var reload = true;
 
     $scope.get = (filter, filter_detail) => {
         temp = filter;
@@ -908,8 +920,8 @@ app.controller('BrandSubgroupController', ['$scope', '$timeout', '$http', functi
     }
 
     $(window).scroll(function () {
-        if ($(window).scrollTop() > $(document).height() - $(window).height() - 100) {
-
+        if ($(window).scrollTop() > $(document).height() - $(window).height() - 100 && reload == true) {
+            reload = false;
             page++;
 
             var data_request = {
@@ -928,6 +940,8 @@ app.controller('BrandSubgroupController', ['$scope', '$timeout', '$http', functi
 
                         //Load lại scripts của aff để tao link cho sản phẩm
                         reload_aff();
+
+                        reload = true;
                     }
                 }
             }, function (error) {
@@ -950,7 +964,8 @@ app.controller('BrandSubgroupDetailController', ['$scope', '$timeout', '$http', 
     var limit = 12;
     var temp = "all";
     var filter_detail = null;
-
+    var temp_detail = null;
+    var reload = true;
 
     $scope.get = (filter, temp_detail) => {
         temp = filter;
@@ -1017,8 +1032,9 @@ app.controller('BrandSubgroupDetailController', ['$scope', '$timeout', '$http', 
     };
 
     $(window).scroll(function () {
-        if ($(window).scrollTop() > $(document).height() - $(window).height() - 100) {
+        if ($(window).scrollTop() > $(document).height() - $(window).height() - 100 && reload == true) {
 
+            reload = false;
             page++;
 
             var data_request = {
@@ -1037,6 +1053,8 @@ app.controller('BrandSubgroupDetailController', ['$scope', '$timeout', '$http', 
 
                         //Load lại scripts của aff để tao link cho sản phẩm
                         reload_aff();
+
+                        reload = true;
                     }
                 }
             }, function (error) {
