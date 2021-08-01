@@ -328,6 +328,16 @@ app.controller('HomeController', ['$scope', '$timeout', '$http', function ($scop
                 autoplayTimeout: 3000,
                 autoplayHoverPause: true
             });
+
+            $('.owl-carousel-banner').owlCarousel({
+                items: 1,
+                loop: true,
+                margin: 10,
+                autoplayHoverPause: true,
+                autoplay: true,
+                autoplayTimeout: 3000,
+                autoplayHoverPause: true
+            });
         }
         else if (device == "mobile") {
             $('.owl-carousel-danh-muc').owlCarousel({
@@ -347,6 +357,16 @@ app.controller('HomeController', ['$scope', '$timeout', '$http', function ($scop
                 autoplayHoverPause: true,
                 autoplay: true,
                 autoplayTimeout: 4000,
+                autoplayHoverPause: true
+            });
+
+            $('.owl-carousel-banner').owlCarousel({
+                items: 1,
+                loop: true,
+                margin: 10,
+                autoplayHoverPause: true,
+                autoplay: true,
+                autoplayTimeout: 3000,
                 autoplayHoverPause: true
             });
         };
@@ -810,7 +830,12 @@ app.controller('BrandSubgroupController', ['$scope', '$timeout', '$http', functi
     var reload = true;
 
     $scope.get = (filter, filter_detail) => {
+        if (filter == 'sale') {
+            filter = price;
+        }
+
         temp = filter;
+
         if (filter_detail == undefined) {
             filter_detail = temp_detail;
         }
@@ -968,7 +993,12 @@ app.controller('BrandSubgroupDetailController', ['$scope', '$timeout', '$http', 
     var reload = true;
 
     $scope.get = (filter, temp_detail) => {
+        if (filter == 'sale') {
+            filter = price;
+        }
+
         temp = filter;
+        
         if (filter_detail == undefined) {
             filter_detail = temp_detail;
         }
@@ -1142,6 +1172,10 @@ app.controller('SearchController', ['$scope', '$timeout', '$http', function ($sc
     var temp = "all";
 
     $scope.get = (filter) => {
+        if (filter == 'sale') {
+            filter = price;
+        }
+
         temp = filter;
         page = 1;
 
