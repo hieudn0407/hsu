@@ -4046,6 +4046,54 @@ a {
     font-weight: bold;
 }
 
+.owl-carousel-banner .owl-dots {
+    display: none;
+}
+
+.owl-carousel-banner .owl-nav .owl-prev {
+    position: absolute;
+    top: 180px;
+    left: 5px;
+}
+
+    .owl-carousel-banner .owl-nav .owl-prev span {
+        font-size: 60px;
+    }
+
+.owl-carousel-banner .owl-nav .owl-next {
+    position: absolute;
+    top: 180px;
+    right: 5px;
+}
+
+    .owl-carousel-banner .owl-nav .owl-next span {
+        font-size: 60px;
+    }
+
+.owl-carousel-gia-soc .owl-nav .owl-prev {
+    position: absolute;
+    top: -45px;
+    right: 50px;
+}
+
+    .owl-carousel-gia-soc .owl-nav .owl-prev span {
+        font-size: 30px;
+    }
+
+.owl-carousel-gia-soc .owl-nav .owl-next {
+    position: absolute;
+    top: -45px;
+    right: 20px;
+}
+
+    .owl-carousel-gia-soc .owl-nav .owl-next span {
+        font-size: 30px;
+    }
+
 .sablanca {
     padding-top: 50px;
+}
+
+.hoang_phuc{
+    padding-top: 90px;
 }

@@ -15,10 +15,10 @@ var deviceType = () => {
 };
 
 var reload_aff = () => {
-    var __atsmarttag = {
-        pub_id: '5388638995624127439',
-        new_tab: 1
-    };
+    //var __atsmarttag = {
+    //    pub_id: '5388638995624127439',
+    //    new_tab: 1
+    //};
     (function () {
         var tags = document.getElementsByTagName("a");
         for (var e = 0; e < tags.length; e++) {
@@ -285,6 +285,7 @@ app.controller('HomeController', ['$scope', '$timeout', '$http', function ($scop
 
                 if (result.status) {
                     $scope.StardustProducts = result.data;
+
                     reload_aff();
                 }
                 else {
@@ -312,6 +313,7 @@ app.controller('HomeController', ['$scope', '$timeout', '$http', function ($scop
             $('.owl-carousel-gia-soc').owlCarousel({
                 items: 5,
                 loop: true,
+                nav: true,
                 margin: 10,
                 autoplayHoverPause: true,
                 autoplay: false,
@@ -332,6 +334,7 @@ app.controller('HomeController', ['$scope', '$timeout', '$http', function ($scop
             $('.owl-carousel-banner').owlCarousel({
                 items: 1,
                 loop: true,
+                nav: true,
                 margin: 10,
                 autoplayHoverPause: true,
                 autoplay: true,
@@ -998,7 +1001,7 @@ app.controller('BrandSubgroupDetailController', ['$scope', '$timeout', '$http', 
         }
 
         temp = filter;
-        
+
         if (filter_detail == undefined) {
             filter_detail = temp_detail;
         }

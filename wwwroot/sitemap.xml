@@ -1,74 +1,218 @@
 <urlset xmlns="http://www.google.com/schemas/sitemap/0.84" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<url>
-<loc>https://pricing.vn</loc>
-<changefreq>daily</changefreq>
-</url>
-<url>
-<loc>https://pricing.vn/</loc>
-<changefreq>daily</changefreq>
-</url>
-<url>
-<loc>https://pricing.vn/danh-muc/nu/trang-phuc</loc>
-<changefreq>daily</changefreq>
-</url>
-<url>
-<loc>https://pricing.vn/danh-muc/nu/tui-xach</loc>
-<changefreq>daily</changefreq>
-</url>
-<url>
-<loc>https://pricing.vn/danh-muc/nu/vi-bop</loc>
-<changefreq>daily</changefreq>
-</url>
-<url>
-<loc>https://pricing.vn/danh-muc/nu/giay</loc>
-<changefreq>daily</changefreq>
-</url>
-<url>
-<loc>https://pricing.vn/danh-muc/nu/noi-y</loc>
-<changefreq>daily</changefreq>
-</url>
-<url>
-<loc>https://pricing.vn/danh-muc/nu/dong-ho</loc>
-<changefreq>daily</changefreq>
-</url>
-<url>
-<loc>https://pricing.vn/danh-muc/nu/phu-kien</loc>
-<changefreq>daily</changefreq>
-</url>
-<url>
-<loc>https://pricing.vn/danh-muc/nam/trang-phuc</loc>
-<changefreq>daily</changefreq>
-</url>
-<url>
-<loc>https://pricing.vn/collections/thoi-trang-nu</loc>
-<changefreq>daily</changefreq>
-</url>
-<url>
-<loc>https://pricing.vn/thuong-hieu/sevenam</loc>
-<changefreq>daily</changefreq>
-</url>
-<url>
-<loc>https://pricing.vn/thuong-hieu/shopceleb</loc>
-<changefreq>daily</changefreq>
-</url>
-<url>
-<loc>https://pricing.vn/thuong-hieu/mays_house</loc>
-<changefreq>daily</changefreq>
-</url>
-<url>
-<loc>https://pricing.vn/collections/thoi-trang-nam</loc>
-<changefreq>daily</changefreq>
-</url>
-<url>
-<loc>https://pricing.vn/thuong-hieu/kwin</loc>
-<changefreq>daily</changefreq>
-</url>
-<url>
-<loc>https://pricing.vn/collections/giay-tui-vi-nu</loc>
-<changefreq>daily</changefreq>
-</url>
-<url>
-<loc>https://pricing.vn/thuong-hieu/vascara</loc>
-<changefreq>daily</changefreq>
-</url>
+  <url>
+    <loc>https://pricing.vn</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://pricing.vn/</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://pricing.vn/danh-muc/nu/trang-phuc</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://pricing.vn/danh-muc/nu/tui-xach</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://pricing.vn/danh-muc/nu/vi-bop</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://pricing.vn/danh-muc/nu/giay</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://pricing.vn/danh-muc/nu/noi-y</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://pricing.vn/danh-muc/nu/dong-ho</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://pricing.vn/danh-muc/nu/phu-kien</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://pricing.vn/danh-muc/nam/trang-phuc</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://pricing.vn/collections/thoi-trang-nu</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://pricing.vn/thuong-hieu/sevenam</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://pricing.vn/thuong-hieu/shopceleb</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://pricing.vn/thuong-hieu/mays_house</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://pricing.vn/collections/thoi-trang-nam</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://pricing.vn/thuong-hieu/kwin</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://pricing.vn/collections/giay-tui-vi-nu</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://pricing.vn/thuong-hieu/vascara</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://pricing.vn/danh-muc/nu/giay/giay-bup-be</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://pricing.vn/danh-muc/nu/giay/giay-bit</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://pricing.vn/danh-muc/nu/giay/dep-guoc</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://pricing.vn/danh-muc/nu/giay/giay-luoi</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://pricing.vn/danh-muc/nu/giay/giay-da-that</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://pricing.vn/danh-muc/nu/giay/giay-sneaker</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://pricing.vn/danh-muc/nu/giay/giay-cao-got</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://pricing.vn/danh-muc/nu/giay/giay-sandals</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://pricing.vn/danh-muc/nu/giay/giay-boot</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://pricing.vn/danh-muc/nu/tui-xach/tui-xach-tay</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://pricing.vn/danh-muc/nu/tui-xach/tui-deo-cheo</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://pricing.vn/danh-muc/nu/tui-xach/tui-da-that</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://pricing.vn/danh-muc/nu/tui-xach/balo</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://pricing.vn/danh-muc/nu/trang-phuc/dam-nu</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://pricing.vn/danh-muc/nu/trang-phuc/ao-dai-nu</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://pricing.vn/danh-muc/nu/trang-phuc/ao-thun-nu</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://pricing.vn/danh-muc/nu/trang-phuc/ao-so-mi-nu</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://pricing.vn/danh-muc/nu/trang-phuc/ao-len-nu</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://pricing.vn/danh-muc/nu/trang-phuc/ao-khoac-nu</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://pricing.vn/danh-muc/nu/trang-phuc/quan-nu</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://pricing.vn/danh-muc/nu/trang-phuc/bo-lien</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://pricing.vn/danh-muc/nu/trang-phuc/chan-vay</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://pricing.vn/danh-muc/nu/vi-bop/vi-cam-tay</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://pricing.vn/danh-muc/nu/vi-bop/vi-du-tiec</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://pricing.vn/danh-muc/nu/vi-bop/vi-da-that</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://pricing.vn/danh-muc/nam/trang-phuc/ao-so-mi-nam</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://pricing.vn/danh-muc/nam/trang-phuc/ao-khoac-nam</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://pricing.vn/danh-muc/nam/trang-phuc/ao-len-nam</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://pricing.vn/danh-muc/nam/trang-phuc/ao-polo-nam</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://pricing.vn/danh-muc/nam/trang-phuc/vest-nam</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://pricing.vn/danh-muc/nam/trang-phuc/quan-tay-nam</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://pricing.vn/danh-muc/nam/trang-phuc/quan-jean-nam</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://pricing.vn/danh-muc/nam/trang-phuc/quan-kaki-nam</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://pricing.vn/danh-muc/nam/trang-phuc/quan-short-nam</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://pricing.vn/danh-muc/nam/trang-phuc/quan-thun-nam</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://pricing.vn/danh-muc/nam/trang-phuc/do-bo-nam</loc>
+    <changefreq>daily</changefreq>
+  </url>
 </urlset>
