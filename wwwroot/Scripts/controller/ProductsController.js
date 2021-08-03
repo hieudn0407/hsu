@@ -474,11 +474,12 @@ app.controller('CategoryController', ['$scope', '$timeout', '$http', function ($
                 autoplayHoverPause: true
             });
 
-            $('.owl-carousel-danh-muc').owlCarousel({
+            $('.owl-carousel-danh-muc-cate-index').owlCarousel({
                 items: 10,
                 margin: 15,
+                nav: true,
                 autoplayHoverPause: true,
-                autoplay: true,
+                autoplay: false,
                 autoplayTimeout: 3000,
                 autoplayHoverPause: true
             });

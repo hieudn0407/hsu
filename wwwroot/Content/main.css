@@ -4090,10 +4090,37 @@ a {
         font-size: 30px;
     }
 
-.sablanca {
-    padding-top: 50px;
+.owl-carousel-danh-muc-cate-index .owl-nav .owl-prev {
+    position: absolute;
+    top: -45px;
+    right: 50px;
 }
 
-.hoang_phuc{
-    padding-top: 90px;
+.owl-carousel-danh-muc-cate-index .owl-nav .owl-prev span {
+    font-size: 30px;
+}
+
+.owl-carousel-danh-muc-cate-index .owl-nav .owl-next {
+    position: absolute;
+    top: -45px;
+    right: 20px;
+}
+
+    .owl-carousel-danh-muc-cate-index .owl-nav .owl-next span {
+        font-size: 30px;
+    }
+
+.sablanca {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.hoang_phuc {
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+
+.tantan {
+    padding-top: 35px;
+    padding-bottom: 40px;
 }
