@@ -215,4 +215,28 @@
     <loc>https://pricing.vn/danh-muc/nam/trang-phuc/do-bo-nam</loc>
     <changefreq>daily</changefreq>
   </url>
+  <url>
+    <loc>https://pricing.vn/ma-giam-gia/shopee.vn</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://pricing.vn/ma-giam-gia/lazada.vn</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://pricing.vn/ma-giam-gia/nguyenkim.com</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://pricing.vn/ma-giam-gia/tiki.vn</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://pricing.vn/ma-giam-gia/yes24.vn</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://pricing.vn/ma-giam-gia/sablanca.vn</loc>
+    <changefreq>daily</changefreq>
+  </url>
 </urlset>

@@ -321,6 +321,17 @@ app.controller('HomeController', ['$scope', '$timeout', '$http', function ($scop
                 autoplayHoverPause: true
             });
 
+            $('.owl-carousel-voucher').owlCarousel({
+                items: 5,
+                loop: true,
+                nav: true,
+                margin: 10,
+                autoplayHoverPause: true,
+                autoplay: false,
+                autoplayTimeout: 3000,
+                autoplayHoverPause: true
+            });
+
             $('.owl-carousel-brands').owlCarousel({
                 items: 5,
                 loop: false,
@@ -360,6 +371,17 @@ app.controller('HomeController', ['$scope', '$timeout', '$http', function ($scop
                 autoplayHoverPause: true,
                 autoplay: true,
                 autoplayTimeout: 4000,
+                autoplayHoverPause: true
+            });
+
+            $('.owl-carousel-voucher-mobile').owlCarousel({
+                items: 2,
+                loop: true,
+                nav: true,
+                margin: 10,
+                autoplayHoverPause: true,
+                autoplay: false,
+                autoplayTimeout: 3000,
                 autoplayHoverPause: true
             });
 
@@ -1400,4 +1422,30 @@ app.controller('LandingPageController', ['$scope', '$timeout', '$http', function
 
         $scope.get(null);
     });
+}])
+
+app.controller('VoucherController', ['$scope', '$timeout', '$http', function ($scope, $timeout, $http) {
+    $(document).ready(function () {
+        function CopyText(id) {
+            var text = document.getElementById(id), range, selection;
+
+            if (document.body.createTextRange) {
+                range = document.body.createTextRange();
+                range.moveToElementText(text);
+                range.select();
+            } else if (window.getSelection) {
+                selection = window.getSelection();
+                range = document.createRange();
+                range.selectNodeContents(text);
+                selection.removeAllRanges();
+                selection.addRange(range);
+
+                document.execCommand("copy");
+            }
+        }
+
+        $(".saochep").click(function () {
+            CopyText($(this).data("id"));
+        });
+    })
 }])

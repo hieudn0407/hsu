@@ -3866,8 +3866,36 @@ a {
     padding: 10px;
 }
 
+.border-gainsboro {
+    border: 1px solid gainsboro;
+}
+
 .pad-15 {
     padding: 15px;
+}
+
+.pad-0-40-0-40 {
+    padding: 0 40px 0 40px;
+}
+
+.pad-0-20-0-20 {
+    padding: 0 25px 0 25px;
+}
+
+.pad-20-0-0-0 {
+    padding: 20px 0 0 0px;
+}
+
+.pad-10-0-10-0 {
+    padding: 10px 0 10px 0;
+}
+
+.color-f1edea {
+    background-color: #f1edea;
+}
+
+.color-ffebd9 {
+    background-color: #ffebd9;
 }
 
 .product-icon-brand {
@@ -4109,6 +4137,53 @@ a {
     .owl-carousel-danh-muc-cate-index .owl-nav .owl-next span {
         font-size: 30px;
     }
+
+
+.owl-carousel-voucher .owl-nav .owl-prev {
+    position: absolute;
+    top: -15px;
+    left: -30px;
+}
+
+    .owl-carousel-voucher .owl-nav .owl-prev span {
+        font-size: 60px;
+    }
+
+.owl-carousel-voucher .owl-nav .owl-next {
+    position: absolute;
+    top: -15px;
+    right: -30px;
+}
+
+    .owl-carousel-voucher .owl-nav .owl-next span {
+        font-size: 60px;
+    }
+
+
+
+
+.owl-carousel-voucher-mobile .owl-nav .owl-prev {
+    position: absolute;
+    top: -5px;
+    left: -20px;
+}
+
+    .owl-carousel-voucher-mobile .owl-nav .owl-prev span {
+        font-size: 40px;
+    }
+
+.owl-carousel-voucher-mobile .owl-nav .owl-next {
+    position: absolute;
+    top: -5px;
+    right: -20px;
+}
+
+    .owl-carousel-voucher-mobile .owl-nav .owl-next span {
+        font-size: 40px;
+    }
+
+
+
 
 .sablanca {
     padding-top: 40px;
