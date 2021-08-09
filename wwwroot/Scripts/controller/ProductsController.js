@@ -153,7 +153,6 @@ app.controller('HomeController', ['$scope', '$timeout', '$http', function ($scop
             $('.owl-carousel-danh-muc').owlCarousel({
                 items: 10,
                 margin: 15,
-                autoplayHoverPause: true,
                 autoplay: true,
                 autoplayTimeout: 3000,
                 autoplayHoverPause: true
@@ -163,7 +162,6 @@ app.controller('HomeController', ['$scope', '$timeout', '$http', function ($scop
                 items: 5,
                 loop: true,
                 margin: 10,
-                autoplayHoverPause: true,
                 autoplay: true,
                 autoplayTimeout: 2000,
                 autoplayHoverPause: true
@@ -174,9 +172,26 @@ app.controller('HomeController', ['$scope', '$timeout', '$http', function ($scop
                 loop: true,
                 nav: true,
                 margin: 10,
-                autoplayHoverPause: true,
                 autoplay: false,
-                autoplayTimeout: 3000,
+                autoplayTimeout: 2500,
+                autoplayHoverPause: true
+            });
+
+            $('.owl-carousel-tiki-static').owlCarousel({
+                items: 2,
+                loop: true,
+                margin: 10,
+                autoplay: true,
+                autoplayTimeout: 2500,
+                autoplayHoverPause: true
+            });
+
+            $('.owl-carousel-primary-banner').owlCarousel({
+                items: 4,
+                loop: false,
+                margin: 10,
+                autoplay: false,
+                autoplayTimeout: 2500,
                 autoplayHoverPause: true
             });
 
@@ -184,7 +199,6 @@ app.controller('HomeController', ['$scope', '$timeout', '$http', function ($scop
                 items: 5,
                 loop: false,
                 margin: 10,
-                autoplayHoverPause: true,
                 autoplay: false,
                 autoplayTimeout: 3000,
                 autoplayHoverPause: true
@@ -195,7 +209,6 @@ app.controller('HomeController', ['$scope', '$timeout', '$http', function ($scop
                 loop: true,
                 nav: true,
                 margin: 10,
-                autoplayHoverPause: true,
                 autoplay: true,
                 autoplayTimeout: 3000,
                 autoplayHoverPause: true
@@ -206,7 +219,6 @@ app.controller('HomeController', ['$scope', '$timeout', '$http', function ($scop
                 items: 3,
                 loop: true,
                 margin: 10,
-                autoplayHoverPause: true,
                 autoplay: true,
                 autoplayTimeout: 3000,
                 autoplayHoverPause: true
@@ -216,7 +228,6 @@ app.controller('HomeController', ['$scope', '$timeout', '$http', function ($scop
                 items: 2,
                 loop: true,
                 margin: 10,
-                autoplayHoverPause: true,
                 autoplay: true,
                 autoplayTimeout: 2000,
                 autoplayHoverPause: true
@@ -227,17 +238,32 @@ app.controller('HomeController', ['$scope', '$timeout', '$http', function ($scop
                 loop: true,
                 nav: true,
                 margin: 10,
-                autoplayHoverPause: true,
                 autoplay: false,
                 autoplayTimeout: 3000,
                 autoplayHoverPause: true
+            });
+
+            $('.owl-carousel-tiki-static').owlCarousel({
+                items: 1,
+                loop: true,
+                margin: 10,
+                autoplay: true,
+                autoplayTimeout: 2500,
+                autoplayHoverPause: true
+            });
+
+            $('.owl-carousel-primary-banner').owlCarousel({
+                items: 2,
+                loop: true,
+                margin: 10,
+                autoplay: false,
+                autoplayTimeout: 2500
             });
 
             $('.owl-carousel-banner').owlCarousel({
                 items: 1,
                 loop: true,
                 margin: 10,
-                autoplayHoverPause: true,
                 autoplay: true,
                 autoplayTimeout: 3000,
                 autoplayHoverPause: true

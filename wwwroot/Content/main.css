@@ -3892,6 +3892,10 @@ a {
     padding: 10px 0 10px 0;
 }
 
+.pad-0-10-0-10 {
+    padding: 0 10px 0 10px;
+}
+
 .color-f1edea {
     background-color: #f1edea;
 }
@@ -4161,9 +4165,6 @@ a {
         font-size: 60px;
     }
 
-
-
-
 .owl-carousel-voucher-mobile .owl-nav .owl-prev {
     position: absolute;
     top: 15px;
@@ -4183,6 +4184,10 @@ a {
     .owl-carousel-voucher-mobile .owl-nav .owl-next span {
         font-size: 40px;
     }
+
+.owl-carousel-primary-banner .owl-dots{
+    display: none;
+}
 
 
 .tick {
