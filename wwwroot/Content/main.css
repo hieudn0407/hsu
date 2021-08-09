@@ -3198,7 +3198,8 @@ a {
     position: absolute;
     top: 12px;
     right: 5px;
-    color: #ff0000;
+    font-size: 12px;
+    color: rgba(0,0,0,.54);
 }
 
 .height-100 {
@@ -3281,6 +3282,7 @@ a {
 .tag-header-name {
     padding: 12px;
     color: red;
+    font-weight: bold;
 }
 
 .no-pad-mar {
@@ -3879,7 +3881,7 @@ a {
 }
 
 .pad-0-20-0-20 {
-    padding: 0 25px 0 25px;
+    padding: 0 50px 0 50px;
 }
 
 .pad-20-0-0-0 {
@@ -4101,7 +4103,7 @@ a {
 .owl-carousel-gia-soc .owl-nav .owl-prev {
     position: absolute;
     top: -45px;
-    right: 50px;
+    right: 140px;
 }
 
     .owl-carousel-gia-soc .owl-nav .owl-prev span {
@@ -4111,7 +4113,7 @@ a {
 .owl-carousel-gia-soc .owl-nav .owl-next {
     position: absolute;
     top: -45px;
-    right: 20px;
+    right: 110px;
 }
 
     .owl-carousel-gia-soc .owl-nav .owl-next span {
@@ -4164,8 +4166,8 @@ a {
 
 .owl-carousel-voucher-mobile .owl-nav .owl-prev {
     position: absolute;
-    top: -5px;
-    left: -20px;
+    top: 15px;
+    left: -30px;
 }
 
     .owl-carousel-voucher-mobile .owl-nav .owl-prev span {
@@ -4174,8 +4176,8 @@ a {
 
 .owl-carousel-voucher-mobile .owl-nav .owl-next {
     position: absolute;
-    top: -5px;
-    right: -20px;
+    top: 15px;
+    right: -30px;
 }
 
     .owl-carousel-voucher-mobile .owl-nav .owl-next span {
@@ -4183,7 +4185,27 @@ a {
     }
 
 
+.tick {
+    width: 100px;
+    padding: 10px 0px 0px 0px;
+    font-size: 1rem;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
 
+.tick-label {
+    font-size: .375em;
+    text-align: center;
+    display: none !important;
+}
+
+.tick-group {
+    margin: 0 .25em;
+    text-align: center;
+}
+
+.tick-credits {
+    display: none !important;
+}
 
 .sablanca {
     padding-top: 40px;
@@ -4203,4 +4225,8 @@ a {
 .elly{
     padding-top: 45px;
     padding-bottom: 45px;
+}
+
+.flash_sale_shopee{
+    padding: 40px 0 40px 0;
 }

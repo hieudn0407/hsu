@@ -146,157 +146,6 @@ $(document).ready(function () {
 });
 
 app.controller('HomeController', ['$scope', '$timeout', '$http', function ($scope, $timeout, $http) {
-    var url = "/Home/";
-
-    $scope.key = 0; // 1: brand, 2: maingroup, 3: subgroup
-    $scope.brand_id = 0;
-    $scope.maingroup_id = 0;
-    $scope.subgroup_id = 0;
-    $scope.filter = 'discount';
-
-    $scope.GetItemsByBrand = (brand_id) => {
-        $scope.key = 1;
-        $scope.brand_id = brand_id;
-
-        var link = url + "GetItemsByBrand";
-
-        var data_request = {
-            brand_id: brand_id,
-            filter: $scope.filter
-        };
-
-        $http.post(link, data_request).then(function (response) {
-            if (response.status == 200) {
-                var result = response.data;
-
-                if (result.status) {
-                    $scope.Products = result.data;
-                }
-                else {
-                    console.log(result.message);
-                }
-
-                CrollToView();
-            }
-        }, function (error) {
-            console.log(error.statusText);
-        });
-    };
-
-    $scope.GetItemsByMaingroupAndSubgroup = (maingroup_id, subgroup_id) => {
-        $scope.key = 3;
-        $scope.maingroup_id = maingroup_id;
-        $scope.subgroup_id = subgroup_id;
-
-        var link = url + "GetItemsByBrand";
-
-        var data_request = {
-            maingroup_id: maingroup_id,
-            subgroup_id: subgroup_id,
-            filter: $scope.filter
-        };
-
-        $http.post(link, data_request).then(function (response) {
-            if (response.status == 200) {
-                var result = response.data;
-
-                if (result.status) {
-                    $scope.Products = result.data;
-                }
-                else {
-                    console.log(result.message);
-                }
-
-                CrollToView();
-            }
-        }, function (error) {
-            console.log(error.statusText);
-        });
-    };
-
-    $scope.Filter = (filter) => {
-        $scope.filter = filter;
-
-        var link = url + "GetItemsByBrand";
-
-        var data_request = {
-            filter: filter
-        };
-
-        if ($scope.key == 1) {
-            data_request = {
-                brand_id: $scope.brand_id,
-                filter: filter
-            };
-        }
-        else if ($scope.key == 2) {
-            data_request = {
-                maingroup_id: $scope.maingroup_id,
-                filter: filter
-            };
-        }
-        else if ($scope.key == 3) {
-            data_request = {
-                maingroup_id: $scope.maingroup_id,
-                subgroup_id: $scope.subgroup_id,
-                filter: filter
-            };
-        }
-
-        $http.post(link, data_request).then(function (response) {
-            if (response.status == 200) {
-                var result = response.data;
-
-                if (result.status) {
-                    $scope.Products = result.data;
-                }
-                else {
-                    console.log(result.message);
-                }
-            }
-        }, function (error) {
-            //console.log(error.statusText);
-        });
-
-        var __atsmarttag = {
-            pub_id: '5388638995624127439',
-            utm_source: '',
-            utm_medium: '',
-            utm_campaign: '',
-            utm_content: '',
-            new_tab: 0
-        };
-        (function () {
-            var script = document.createElement('script');
-            script.src = '//static.accesstrade.vn/js/atsmarttag.min.js?v=1.1.0';
-            script.type = 'text/javascript';
-            script.async = true;
-            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
-        })();
-    };
-
-    var GetSaleProduct = () => {
-        var link = url + "GetSaleProduct";
-
-        $http.post(link, null).then(function (response) {
-            if (response.status == 200) {
-
-                var result = response.data;
-
-                if (result.status) {
-                    $scope.StardustProducts = result.data;
-
-                    reload_aff();
-                }
-                else {
-                    console.log(result.message);
-                }
-            }
-        }, function (error) {
-            console.log(error.statusText);
-        });
-    };
-
     var init = () => {
         let device = deviceType();
 
@@ -313,11 +162,10 @@ app.controller('HomeController', ['$scope', '$timeout', '$http', function ($scop
             $('.owl-carousel-gia-soc').owlCarousel({
                 items: 5,
                 loop: true,
-                nav: true,
                 margin: 10,
                 autoplayHoverPause: true,
-                autoplay: false,
-                autoplayTimeout: 3000,
+                autoplay: true,
+                autoplayTimeout: 2000,
                 autoplayHoverPause: true
             });
 
@@ -370,7 +218,7 @@ app.controller('HomeController', ['$scope', '$timeout', '$http', function ($scop
                 margin: 10,
                 autoplayHoverPause: true,
                 autoplay: true,
-                autoplayTimeout: 4000,
+                autoplayTimeout: 2000,
                 autoplayHoverPause: true
             });
 
@@ -400,7 +248,7 @@ app.controller('HomeController', ['$scope', '$timeout', '$http', function ($scop
     angular.element(document).ready(function () {
         init();
 
-        GetSaleProduct();
+        reload_aff();
     });
 }])
 
