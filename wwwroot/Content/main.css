@@ -4212,6 +4212,18 @@ a {
     display: none !important;
 }
 
+.footer-view {
+    background: #d6d6d6;
+    height: 60px;
+    color: white;
+    text-align: center;
+}
+
+.footer img {
+    height: 100%;
+    padding: 10px;
+}
+
 .sablanca {
     padding-top: 40px;
     padding-bottom: 40px;
