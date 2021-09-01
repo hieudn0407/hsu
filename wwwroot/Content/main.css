@@ -3472,7 +3472,7 @@ a {
 }
 
 ::-webkit-scrollbar {
-    display: none;
+    /*display: none;*/
 }
 
 .filter-form {
@@ -4086,6 +4086,7 @@ a {
 }
 
 .owl-carousel-banner .owl-nav .owl-prev {
+    display: none;
     position: absolute;
     top: 180px;
     left: 5px;
@@ -4096,6 +4097,7 @@ a {
     }
 
 .owl-carousel-banner .owl-nav .owl-next {
+    display: none;
     position: absolute;
     top: 180px;
     right: 5px;
