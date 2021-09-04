@@ -892,7 +892,7 @@ app.controller('BrandSubgroupDetailController', ['$scope', '$timeout', '$http', 
     var temp_detail = null;
     var reload = true;
 
-    $scope.get = (filter, temp_detail) => {
+    $scope.get = (filter, filter_detail) => {
         if (filter == 'sale') {
             filter = price;
         }

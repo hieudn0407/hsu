@@ -9,11 +9,11 @@ $(document).ready(function () {
         prefix: ''
     });
     noUiSlider.create(rangeSlider, {
-        start: [10000, 1000000],
+        start: [price_minn, price_maxx],
         step: 1,
         range: {
-            'min': [10000],
-            'max': [2000000]
+            'min': [price_minn],
+            'max': [price_maxx]
         },
         format: moneyFormat,
         connect: true
