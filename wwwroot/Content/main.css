@@ -3575,6 +3575,7 @@ a {
 
 .filter-brand-img {
     width: 100%;
+    border: 1px solid white;
 }
 
 .filter-brand-img-active {
@@ -3813,7 +3814,8 @@ a {
 
 .filter-brand-item-des {
     width: 160px;
-    padding: 0px 8px;
+    padding: 5px 8px;
+    float: left;
 }
 
 .filter-btn-apply-des {
@@ -4256,7 +4258,7 @@ a {
 }
 
 .bitis {
-    padding: 50px 0 50px 0;
+    padding: 40px 0 40px 0;
 }
 
 .flash_sale_shopee {

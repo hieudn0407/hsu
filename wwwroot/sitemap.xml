@@ -40,7 +40,23 @@
     <changefreq>daily</changefreq>
   </url>
   <url>
+    <loc>https://pricing.vn/thuong-hieu/bitis</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://pricing.vn/thuong-hieu/marc</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://pricing.vn/thuong-hieu/dosiin</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
     <loc>https://pricing.vn/collections/giay-tui-vi-nu</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://pricing.vn/collections/giay-tui-vi-nam</loc>
     <changefreq>daily</changefreq>
   </url>
   <url>
