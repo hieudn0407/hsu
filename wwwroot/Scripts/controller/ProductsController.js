@@ -202,6 +202,7 @@ app.controller('HomeController', ['$scope', '$timeout', '$http', function ($scop
                 autoplay: false,
                 autoplayTimeout: 3000,
                 autoplayHoverPause: true
+                
             });
 
             $('.owl-carousel-banner').owlCarousel({
