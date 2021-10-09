@@ -559,6 +559,69 @@ app.controller('CategoryDetailController', ['$scope', '$timeout', '$http', funct
     });
 }])
 
+app.controller('CompareController', ['$scope', '$timeout', '$http', function ($scope, $timeout, $http) {
+    var page = 1;
+    var limit = 12;
+    var reload = true;
+
+    $scope.get = () => {
+        page = 1;
+
+        var data_request = {
+            page: page,
+            limit: limit
+        };
+
+        $http.post(location.pathname, data_request).then(function (response) {
+            if (response.status == 200) {
+                let result = response.data;
+
+                if (result.status) {
+                    $scope.CompareProducts = result.data;
+
+                    //Load lại scripts của aff để tao link cho sản phẩm
+                    reload_aff();
+                }
+            }
+        }, function (error) {
+            console.log(error.statusText);
+        });
+    };
+
+    $(window).scroll(function () {
+        if ($(window).scrollTop() > $(document).height() - $(window).height() - 100 && reload == true) {
+            reload = false;
+            page++;
+
+            var data_request = {
+                page: page,
+                limit: limit
+            };
+
+            $http.post(location.pathname, data_request).then(function (response) {
+                if (response.status == 200) {
+                    let result = response.data;
+
+                    if (result.status) {
+                        $scope.CompareProducts = $scope.CompareProducts.concat(result.data);
+
+                        //Load lại scripts của aff để tao link cho sản phẩm
+                        reload_aff();
+
+                        reload = true;
+                    }
+                }
+            }, function (error) {
+                console.log(error.statusText);
+            });
+        }
+    });
+
+    angular.element(document).ready(function () {
+        $scope.get();
+    });
+}])
+
 app.controller('BrandController', ['$scope', '$timeout', '$http', function ($scope, $timeout, $http) {
     var url = "/Category/";
 

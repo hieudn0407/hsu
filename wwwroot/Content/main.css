@@ -1530,6 +1530,78 @@ h2.title {
     position: relative;
 }
 
+.color-086a87 {
+    color: #086a87;
+}
+
+.tag-compare {
+    display: -webkit-inline-box;
+    overflow: auto;
+}
+
+.compare-list {
+    width: 250px;
+    height: 300px;
+    padding: 10px;
+}
+
+.text-red {
+    color: red;
+}
+
+.compare-list-item {
+    border: 2px solid whitesmoke;
+    height: 100%;
+}
+
+    .compare-list-item img {
+        margin-left: 65px;
+        padding: 15px;
+    }
+
+.compare-product-tag {
+    display: flex;
+    overflow: auto;
+}
+
+.compare-product-body {
+    width: 150px;
+    height: 170px;
+    padding: 10px;
+}
+
+.compare-product-detail {
+    border: 2px solid red;
+    height: 100%;
+    position: relative;
+}
+
+    .compare-product-detail img {
+        margin-left: 20px;
+        padding: 15px;
+    }
+
+.compare-product-name {
+    text-align: center;
+    color: #086a87;
+}
+
+.compare-product-button {
+    width: 100%;
+    border: none;
+    background: red;
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    bottom: 0;
+}
+
+.bottom-news {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
 .product-overlay {
     background: #FE980F;
     top: 0;
@@ -3298,6 +3370,24 @@ a {
     margin-top: 10px;
 }
 
+.mar-top-0-10-10-10 {
+    margin: 0px 10px 10px 10px;
+}
+
+.text-blue-bold {
+    color: blue;
+    font-weight: bold;
+}
+
+.mar-left-5 {
+    margin-left: 5px;
+}
+
+.compare-products-img {
+    border: 3px solid red;
+    height: fit-content;
+}
+
 .home-view {
     width: 100%;
     float: left;
@@ -4307,6 +4397,18 @@ a {
     padding: 40px 0 40px 0;
 }
 
-.shopee{
+.shopee {
     padding: 40px 0 40px 0;
+}
+
+.tiki {
+    padding: 60px 15px 60px 15px;
+}
+
+.lazada {
+    padding: 40px 0px 40px 0px;
+}
+
+.sendo {
+    padding: 45px 0 45px 0px;
 }
