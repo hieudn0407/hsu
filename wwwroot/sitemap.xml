@@ -747,4 +747,52 @@
     <loc>https://pricing.vn/thuong-hieu/mays_house/nu/trang-phuc/ao-dai-nu</loc>
     <changefreq>daily</changefreq>
   </url>
+  <url>
+    <loc>https://pricing.vn/so-sanh-gia/iphone-12-pro-max</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://pricing.vn/so-sanh-gia/iphone-12</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://pricing.vn/so-sanh-gia/iphone-11-pro-max</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://pricing.vn/so-sanh-gia/iphone-11</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://pricing.vn/so-sanh-gia/iphone-xs-max</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://pricing.vn/so-sanh-gia/iphone-8-plus</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://pricing.vn/so-sanh-gia/iphone-x</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://pricing.vn/so-sanh-gia/iphone-7-plus</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://pricing.vn/danh-muc/dien-thoai-may-tinh-bang/dien-thoai</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://pricing.vn/danh-muc/dien-thoai-may-tinh-bang/may-tinh-bang</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://pricing.vn/danh-muc/dien-thoai-may-tinh-bang/tai-nghe</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://pricing.vn/danh-muc/dien-thoai-may-tinh-bang/dong-ho-thong-minh</loc>
+    <changefreq>daily</changefreq>
+  </url>
 </urlset>
