@@ -3385,7 +3385,7 @@ a {
 
 .compare-products-img {
     border: 3px solid red;
-    height: fit-content;
+    height: auto;
 }
 
 .home-view {
