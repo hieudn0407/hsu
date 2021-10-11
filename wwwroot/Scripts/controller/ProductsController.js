@@ -1,6 +1,13 @@
 ﻿"use strict";
 
 var app = angular.module("StoreM", []).run();
+
+app.filter("trust", ['$sce', function ($sce) {
+    return function (htmlCode) {
+        return $sce.trustAsHtml(htmlCode);
+    }
+}]);
+
 var price = 'up';
 
 var deviceType = () => {
@@ -604,7 +611,6 @@ app.controller('CompareController', ['$scope', '$timeout', '$http', function ($s
 
                     if (result.status) {
                         $scope.CompareProducts = $scope.CompareProducts.concat(result.data);
-
                         //Load lại scripts của aff để tao link cho sản phẩm
                         reload_aff();
 
@@ -1384,6 +1390,60 @@ app.controller('VoucherController', ['$scope', '$timeout', '$http', function ($s
 
         $(".saochep").click(function () {
             CopyText($(this).data("id"));
+        });
+
+        var page = 1;
+        var reload = true;
+
+        $scope.get = () => {
+            page = 1;
+
+            var data_request = {
+                page: page
+            };
+
+            $http.post(location.pathname, data_request).then(function (response) {
+                if (response.status == 200) {
+                    let result = response.data;
+
+                    if (result.status) {
+                        $scope.Vouchers = result.data;
+                    }
+                }
+            }, function (error) {
+                console.log(error.statusText);
+            });
+        };
+
+        $(window).scroll(function () {
+            if ($(window).scrollTop() > $(document).height() - $(window).height() - 100 && reload == true) {
+                $scope.reload = false;
+                reload = false;
+                page++;
+
+                var data_request = {
+                    page: page
+                };
+
+                $http.post(location.pathname, data_request).then(function (response) {
+                    if (response.status == 200) {
+                        let result = response.data;
+
+                        if (result.status) {
+                            $scope.Vouchers = $scope.Vouchers.concat(result.data);
+
+                            reload = true;
+                            $scope.reload = true;
+                        }
+                    }
+                }, function (error) {
+                    console.log(error.statusText);
+                });
+            }
+        });
+
+        angular.element(document).ready(function () {
+            $scope.get();
         });
     })
 }])

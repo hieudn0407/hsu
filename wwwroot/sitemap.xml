@@ -772,7 +772,7 @@
     <changefreq>daily</changefreq>
   </url>
   <url>
-    <loc>https://pricing.vn/so-sanh-gia/iphone-x</loc>
+    <loc>https://pricing.vn/so-sanh-gia/iphone-8</loc>
     <changefreq>daily</changefreq>
   </url>
   <url>
@@ -780,7 +780,31 @@
     <changefreq>daily</changefreq>
   </url>
   <url>
+    <loc>https://pricing.vn/so-sanh-gia/galaxy-s21</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://pricing.vn/so-sanh-gia/galaxy-note-20</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
     <loc>https://pricing.vn/danh-muc/dien-thoai-may-tinh-bang/dien-thoai</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://pricing.vn/danh-muc/dien-thoai-may-tinh-bang/dien-thoai/xiaomi</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://pricing.vn/danh-muc/dien-thoai-may-tinh-bang/dien-thoai/oppo</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://pricing.vn/danh-muc/dien-thoai-may-tinh-bang/dien-thoai/apple</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://pricing.vn/danh-muc/dien-thoai-may-tinh-bang/dien-thoai/samsung</loc>
     <changefreq>daily</changefreq>
   </url>
   <url>
@@ -788,11 +812,103 @@
     <changefreq>daily</changefreq>
   </url>
   <url>
+    <loc>https://pricing.vn/danh-muc/dien-thoai-may-tinh-bang/may-tinh-bang/apple</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://pricing.vn/danh-muc/dien-thoai-may-tinh-bang/may-tinh-bang/samsung</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://pricing.vn/danh-muc/dien-thoai-may-tinh-bang/may-tinh-bang/xiaomi</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://pricing.vn/danh-muc/dien-thoai-may-tinh-bang/may-tinh-bang/amazon</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://pricing.vn/danh-muc/dien-thoai-may-tinh-bang/may-tinh-bang/huawei</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://pricing.vn/danh-muc/dien-thoai-may-tinh-bang/may-tinh-bang/sony</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://pricing.vn/danh-muc/dien-thoai-may-tinh-bang/may-tinh-bang/microsoft</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://pricing.vn/danh-muc/dien-thoai-may-tinh-bang/may-tinh-bang/asus</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
     <loc>https://pricing.vn/danh-muc/dien-thoai-may-tinh-bang/tai-nghe</loc>
     <changefreq>daily</changefreq>
   </url>
   <url>
+    <loc>https://pricing.vn/danh-muc/dien-thoai-may-tinh-bang/tai-nghe/sony</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://pricing.vn/danh-muc/dien-thoai-may-tinh-bang/tai-nghe/apple</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://pricing.vn/danh-muc/dien-thoai-may-tinh-bang/tai-nghe/lg</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://pricing.vn/danh-muc/dien-thoai-may-tinh-bang/tai-nghe/jbl</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://pricing.vn/danh-muc/dien-thoai-may-tinh-bang/tai-nghe/xiaomi</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://pricing.vn/danh-muc/dien-thoai-may-tinh-bang/tai-nghe/samsung</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://pricing.vn/danh-muc/dien-thoai-may-tinh-bang/tai-nghe/bose</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://pricing.vn/danh-muc/dien-thoai-may-tinh-bang/tai-nghe/partron</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://pricing.vn/danh-muc/dien-thoai-may-tinh-bang/tai-nghe/philips</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://pricing.vn/danh-muc/dien-thoai-may-tinh-bang/tai-nghe/qcy</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://pricing.vn/danh-muc/dien-thoai-may-tinh-bang/tai-nghe/anker</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
     <loc>https://pricing.vn/danh-muc/dien-thoai-may-tinh-bang/dong-ho-thong-minh</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://pricing.vn/danh-muc/dien-thoai-may-tinh-bang/dong-ho-thong-minh/apple</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://pricing.vn/danh-muc/dien-thoai-may-tinh-bang/dong-ho-thong-minh/samsung</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://pricing.vn/danh-muc/dien-thoai-may-tinh-bang/dong-ho-thong-minh/xiaomi</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://pricing.vn/danh-muc/dien-thoai-may-tinh-bang/dong-ho-thong-minh/huawei</loc>
     <changefreq>daily</changefreq>
   </url>
 </urlset>
