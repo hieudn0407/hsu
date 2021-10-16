@@ -1629,14 +1629,12 @@ h2.title {
 }
 
 .compare-product-detail {
-    border: 2px solid red;
     height: 100%;
     position: relative;
 }
 
     .compare-product-detail img {
         margin-left: 20px;
-        padding: 15px;
     }
 
 .compare-product-name {
@@ -3984,6 +3982,7 @@ a {
     }
 
 .owl-carousel-voucher-mobile .owl-nav .owl-prev {
+    display: none;
     position: absolute;
     top: 15px;
     left: -30px;
@@ -3994,6 +3993,7 @@ a {
     }
 
 .owl-carousel-voucher-mobile .owl-nav .owl-next {
+    display: none;
     position: absolute;
     top: 15px;
     right: -30px;
