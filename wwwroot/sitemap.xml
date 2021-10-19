@@ -32,6 +32,10 @@
     <changefreq>daily</changefreq>
   </url>
   <url>
+    <loc>https://pricing.vn/ma-giam-gia</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
     <loc>https://pricing.vn/ma-giam-gia/nguyenkim.com</loc>
     <changefreq>daily</changefreq>
   </url>
