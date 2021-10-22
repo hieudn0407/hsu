@@ -3007,14 +3007,14 @@ a {
 .brand-home {
     /*border: 1px solid #dcdcdc;*/
     margin: 0px 0px 5px 0px;
-    padding: 5px;
+    /*padding: 5px;*/
     /*border: 1px solid gainsboro;*/
 }
 
 .brand-home-mobile {
     /*border: 1px solid #dcdcdc;*/
     margin: 0px 0px 5px 5px;
-    padding: 5px;
+    /*padding: 5px;*/
     width: 150px;
     border: 1px solid gainsboro;
 }
