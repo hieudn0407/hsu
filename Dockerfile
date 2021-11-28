@@ -1,4 +1,4 @@
-FROM microsoft/dotnet:3.1-aspnetcore-runtime AS base
+FROM microsoft/dotnet:2.1-aspnetcore-runtime AS base
 COPY . /app
 WORKDIR /app
  
