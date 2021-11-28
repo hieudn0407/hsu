@@ -5,7 +5,7 @@ html {
 }
 
 body {
-    font-family: monospace;
+    font-family: 'Helvetica Neue', sans-serif;
     background: #4e270d;
     margin: 0;
     background-image: url(/image/bg.jpg);
@@ -217,7 +217,7 @@ button {
 }
 
 .monospace {
-    font-family: monospace;
+    font-family: 'Helvetica Neue', sans-serif;
 }
 
 /*điện thoại, chiều dọc*/
@@ -299,7 +299,7 @@ button {
         margin: 10px 0 5px 0px;
         padding: 10px;
         background: #925731;
-        font-family: monospace;
+        font-family: 'Helvetica Neue', sans-serif;
         color: #ffe18e;
     }
 
@@ -319,7 +319,7 @@ button {
         width: 100%;
         margin-top: 0px;
         border: 1px solid #925731;
-        font-family: monospace;
+        font-family: 'Helvetica Neue', sans-serif;
         background: #ffe9db;
     }
 
@@ -404,7 +404,7 @@ button {
         padding: 5px 5px 5px 10px;
         border-bottom: 1px solid #e4e4e4;
         font-size: 20px;
-        font-family: monospace;
+        font-family: 'Helvetica Neue', sans-serif;
         position: relative;
     }
 
@@ -507,7 +507,7 @@ button {
         background: #9e7e43;
         color: #ffe18e;
         border: none;
-        font-family: monospace;
+        font-family: 'Helvetica Neue', sans-serif;
         border-radius: 0px;
     }
 
@@ -674,7 +674,7 @@ button {
         background: #9e7e43;
         color: #ffe18e;
         border: none;
-        font-family: monospace;
+        font-family: 'Helvetica Neue', sans-serif;
         border-radius: 0px;
     }
 
@@ -742,7 +742,7 @@ button {
         margin: 10px 0 5px 0px;
         padding: 10px;
         background: #925731;
-        font-family: monospace;
+        font-family: 'Helvetica Neue', sans-serif;
         color: #ffe18e;
     }
 
@@ -768,7 +768,7 @@ button {
         width: 100%;
         margin-top: 0px;
         border: 1px solid #925731;
-        font-family: monospace;
+        font-family: 'Helvetica Neue', sans-serif;
         background: #ffe9db;
     }
 
@@ -853,7 +853,7 @@ button {
         padding: 5px 5px 5px 10px;
         border-bottom: 1px solid #e4e4e4;
         font-size: 20px;
-        font-family: monospace;
+        font-family: 'Helvetica Neue', sans-serif;
         position: relative;
     }
 
@@ -971,7 +971,7 @@ button {
         margin: 10px 0 5px 0px;
         padding: 10px;
         background: #925731;
-        font-family: monospace;
+        font-family: 'Helvetica Neue', sans-serif;
         color: #ffe18e;
     }
 
@@ -990,7 +990,7 @@ button {
         width: 100%;
         margin-top: 0px;
         border: 1px solid #925731;
-        font-family: monospace;
+        font-family: 'Helvetica Neue', sans-serif;
         background: #ffe9db;
     }
 
@@ -1085,7 +1085,7 @@ button {
         margin: 10px 0 5px 0px;
         padding: 10px;
         background: #925731;
-        font-family: monospace;
+        font-family: 'Helvetica Neue', sans-serif;
         color: #ffe18e;
     }
 
@@ -1134,7 +1134,7 @@ button {
         background: #9e7e43;
         color: #ffe18e;
         border: none;
-        font-family: monospace;
+        font-family: 'Helvetica Neue', sans-serif;
         border-radius: 0px;
     }
 
@@ -1162,7 +1162,7 @@ button {
         width: 100%;
         margin-top: 0px;
         border: 1px solid #925731;
-        font-family: monospace;
+        font-family: 'Helvetica Neue', sans-serif;
         background: #ffe9db;
     }
 
@@ -1339,7 +1339,7 @@ button {
         font-size: 15px;
         margin: -5px;
         margin-top: 8px;
-        font-family: monospace;
+        font-family: 'Helvetica Neue', sans-serif;
     }
 
     .tag-user-account:hover .dropdown-user-account {
