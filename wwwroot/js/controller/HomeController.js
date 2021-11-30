@@ -8,7 +8,7 @@
 
     if (connection.q == "Disconnected") {
         connection.start().then(function () {
-            connection.invoke("GetKeno").catch(function (err) {
+            connection.invoke("GetKeno", global_token).catch(function (err) {
                 return console.error(err.toString());
             });
         }).catch(function (err) {
@@ -38,7 +38,7 @@
         $scope.selectChanLe = num;
     };
 
-    
+
 
     $scope.PlayNow = () => {
         $scope.PlayNowModal = true;
@@ -85,7 +85,7 @@
             return;
         }
 
-        connection.invoke("KenoBet", $scope.KenoCurrent.id, number, coin).catch(function (err) {
+        connection.invoke("KenoBet", global_token, $scope.KenoCurrent.id, number, coin).catch(function (err) {
             return console.error(err.toString());
         });
     };
@@ -109,12 +109,14 @@
             return;
         }
 
-        connection.invoke("ChanLeBet", $scope.ChanLeCurrent.id, number, coin).catch(function (err) {
+        connection.invoke("ChanLeBet", global_token, $scope.ChanLeCurrent.id, number, coin).catch(function (err) {
             return console.error(err.toString());
         });
     };
 
-    connection.on("ReceiveKeno", function (record, chanle, historyKeno, historyChanLe) {
+    connection.on("ReceiveKeno", function (cookie_token, record, chanle, historyKeno, historyChanLe) {
+        update_token(cookie_token);
+
         $scope.KenoCurrent = record.data[0];
         $scope.KenoLast = record.data[1];
 
@@ -127,9 +129,13 @@
         $scope.historyKeno = historyKeno;
         $scope.historyChanLe = historyChanLe;
 
-        $scope.text = "QUAY SỐ BẮT ĐẦU SAU";
+        $scope.text = "VÒNG ĐẶT CƯỢC";
         if (record.data[0].result != -1 && record.data[0].updatedusercoins) {
-            $scope.text = "ĐỢI QUAY SỐ LẦN TỚI";
+            $scope.text = "VÒNG KẾT QUẢ";
+        }
+
+        if (record.data[0].result != -1 && !record.data[0].updatedusercoins) {
+            record.data[0].result = "??";
         }
 
         var countdown = record.data[0].countdown;
@@ -142,7 +148,7 @@
             if ($scope.minus == 0 && $scope.seconds == -1) {
                 clearInterval(tick);
                 countdown = 0;
-                connection.invoke("GetKeno").catch(function (err) {
+                connection.invoke("GetKeno", global_token).catch(function (err) {
                     return console.error(err.toString());
                 });
 
@@ -154,14 +160,25 @@
                 $scope.minus = $scope.minus - 1;
             }
 
+            if ($scope.minus == 0 && !record.data[0].updatedusercoins) {
+                $scope.text = "ĐỢI KẾT QUẢ";
+            }
+
             $scope.$apply()
         }, 1000);
 
         $scope.loading = false;
     });
 
-    connection.on("ReceiveKenoBet", function (response) {
+    connection.on("ReceiveKenoBet", function (cookie_token, response) {
         alert(response.message);
+
+        if (response.code == 201) {
+            sign_out();
+            return;
+        }
+
+        update_token(cookie_token);
 
         if (response.code == 200) {
             setTimeout(function () {
@@ -170,8 +187,15 @@
         }
     });
 
-    connection.on("ReceiveChanLeBet", function (response) {
+    connection.on("ReceiveChanLeBet", function (cookie_token, response) {
         alert(response.message);
+
+        if (response.code == 201) {
+            sign_out();
+            return;
+        }
+
+        update_token(cookie_token);
 
         if (response.code == 200) {
             setTimeout(function () {

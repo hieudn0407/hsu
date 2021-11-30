@@ -5,10 +5,59 @@ var connectionAccount = new signalR.HubConnectionBuilder().withUrl("/AccountHub"
 var ALERT_TITLE = "Thông Báo";
 var ALERT_BUTTON_TEXT = "OK";
 
+var global_token = {
+    value: getCookie("USER"),
+    key: getCookie("KEY"),
+    iv: getCookie("IV"),
+};
+
 if (document.getElementById) {
     window.alert = function (txt) {
         createCustomAlert(txt);
     }
+}
+
+function setCookie(name, value, days) {
+    var expires = "";
+    if (days) {
+        var date = new Date();
+        date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+        expires = "; expires=" + date.toUTCString();
+    }
+    document.cookie = name + "=" + (value || "") + expires + ";";
+}
+
+function getCookie(name) {
+    var nameEQ = name + "=";
+    var ca = document.cookie.split(';');
+    for (var i = 0; i < ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+        if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+    }
+    return null;
+}
+
+function eraseCookie(name) {
+    document.cookie = name + '=; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+
+}
+
+function remove_cookie() {
+    eraseCookie("USER");
+    eraseCookie("KEY");
+    eraseCookie("IV");
+}
+
+function sign_out() {
+    remove_cookie();
+    window.location.href = "/";
+}
+
+function update_token(token) {
+    setCookie("USER", token.value, 365);
+    setCookie("KEY", token.key, 365);
+    setCookie("IV", token.iv, 365);
 }
 
 function createCustomAlert(txt) {

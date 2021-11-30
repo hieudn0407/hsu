@@ -274,7 +274,7 @@ button {
     }
 
     .before-num {
-        font-size: 25px;
+        font-size: 20px;
     }
 
     .header-form {
@@ -431,7 +431,6 @@ button {
         position: absolute;
         top: 5px;
         right: 10px;
-        font-family: fantasy;
     }
 
     .pad-home {
@@ -717,7 +716,7 @@ button {
     }
 
     .before-num {
-        font-size: 25px;
+        font-size: 20px;
     }
 
     .header-form {
@@ -880,7 +879,6 @@ button {
         position: absolute;
         top: 5px;
         right: 10px;
-        font-family: fantasy;
     }
 
     .pad-home {
@@ -1242,6 +1240,7 @@ button {
         color: white;
         cursor: pointer;
         padding: 20px;
+        font-weight: bold;
     }
 
     .dropdown-content {
@@ -1338,7 +1337,7 @@ button {
         z-index: 1;
         font-size: 15px;
         margin: -5px;
-        margin-top: 8px;
+        margin-top: 7px;
         font-family: 'Helvetica Neue', sans-serif;
     }
 
