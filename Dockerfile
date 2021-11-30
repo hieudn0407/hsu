@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/dotnet/core/runtime AS base
+FROM mcr.microsoft.com/dotnet/core/aspnet:3.1 AS runtime
 COPY . /app
 WORKDIR /app
  
