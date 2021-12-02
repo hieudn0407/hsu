@@ -115,6 +115,12 @@
     };
 
     connection.on("ReceiveKeno", function (cookie_token, record, chanle, historyKeno, historyChanLe) {
+        if (cookie_token == null) {
+            remove_cookie();
+            window.location.reload();
+            return;
+        }
+
         update_token(cookie_token);
 
         $scope.KenoCurrent = record.data[0];
@@ -139,11 +145,21 @@
         }
 
         var countdown = record.data[0].countdown;
+        var date_start = new Date();
+        var date_end = new Date(date_start.getTime() + (countdown *1000));
         $scope.minus = (countdown - countdown % 60) / 60;
         $scope.seconds = countdown % 60;
 
         var tick = setInterval(function () {
             $scope.seconds = $scope.seconds - 1;
+
+            var x1 = Math.round((date_end.getTime() - new Date().getTime()) / 1000);
+            var x2 = ($scope.minus * 60) + $scope.seconds;
+
+            if (x1 != x2) {
+                window.location.reload();
+                return;
+            }
 
             if ($scope.minus == 0 && $scope.seconds == -1) {
                 clearInterval(tick);

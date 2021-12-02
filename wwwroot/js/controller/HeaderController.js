@@ -106,12 +106,18 @@
         }
     });
 
-    connectionAccount.on("CheckLoginStatus", function (response) {
+    connectionAccount.on("CheckLoginStatus", function (response, cookie_token) {
         if (response.code == 200) {
+            update_token(cookie_token);
             window.location.href = "/doan-so-chan-le";
             return;
         }
+        else if (response.code == 201) {
+            remove_cookie();
+            window.location.href = "/";
+        }
         else {
+            remove_cookie();
             $scope.LoginModal = true;
             $scope.RegisterModal = false;
             $scope.$apply();
