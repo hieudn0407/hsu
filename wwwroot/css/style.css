@@ -654,6 +654,7 @@ button {
         height: 300px;
         display: inline-block;
         background: #824e00;
+        border: 1px solid #824e00;
     }
 
     .roll {
@@ -812,6 +813,11 @@ button {
 
     .roll-center-pot-bet {
         display: none;
+        padding: 5px;
+    }
+
+    .roll-center-pot-bet-mobile {
+        padding: 5px;
     }
 
     .roll-center-reward {
@@ -819,20 +825,21 @@ button {
         bottom: 0;
         right: 0;
         left: 0;
-        display: none;
+        top: 0;
+        font-size: 10px;
+        border: 1px solid #824e00;
     }
 
     .roll-center-bet {
-        width: 50px;
-        height: 15px;
-        padding: 15px;
+        width: 55px;
+        height: 10px;
+        padding: 10px;
         background: #797979;
-        margin: 0 5px 0 5px;
         text-align: center;
         user-select: none;
         font-weight: bold;
         color: white;
-        font-size: 15px;
+        font-size: 10px;
         cursor: pointer;
         display: inline-block;
     }
@@ -841,14 +848,14 @@ button {
             text-shadow: 0 0 5px #fee71b, 0 0 5px #fee71b, 0 0 2px #fee71b;
             background: #824e00 !important;
             color: yellow !important;
-            font-size: 16px;
+            font-size: 10px;
         }
 
     .roll-center-bet-active {
         text-shadow: 0 0 5px #fee71b, 0 0 5px #fee71b, 0 0 2px #fee71b;
         background: #824e00 !important;
         color: yellow !important;
-        font-size: 16px;
+        font-size: 10px;
     }
 
     .roll-center-result {
@@ -882,11 +889,33 @@ button {
         height: 40px;
         color: #fff;
         background: #f00;
-        border: 3px solid #000;
-        font-size: 20px;
+        font-size: 15px;
         font-weight: bold;
         text-transform: uppercase;
+        border: none;
+        margin-top: 10px;
     }
+
+    .roll-reward-active {
+        background: #824e00;
+        color: yellow;
+        font-weight: bold;
+        text-shadow: 0 0 5px #fee71b, 0 0 5px #fee71b, 0 0 2px #fee71b;
+        border: 1px solid #824e00;
+    }
+
+    .current-coin {
+        text-align: center;
+        padding: 5px;
+        margin: 5px;
+        font-size: 20px;
+    }
+
+        .current-coin img {
+            position: absolute;
+            top: 3px;
+            margin-left: 5px;
+        }
 }
 
 /*máy tính bảng, chiều dọc*/
@@ -1730,6 +1759,7 @@ button {
         height: 600px;
         display: inline-block;
         background: #824e00;
+        border: 1px solid #824e00;
     }
 
     .roll {
@@ -1744,7 +1774,7 @@ button {
     }
 
         .roll img {
-            width: 25px;
+            width: 58px;
         }
 
     .active {
@@ -1940,7 +1970,7 @@ button {
     }
 
     .roll-cell-3 {
-        font-size: 20px;
+        font-size: 15px;
     }
 
     .roll-cell-4 {
@@ -1952,13 +1982,31 @@ button {
         height: 50px;
         color: white;
         background: red;
-        border: 5px solid #000000;
+        border: none;
         font-size: 20px;
         font-weight: bold;
         text-transform: uppercase;
+        margin-top: 10px;
     }
 
     .roll-center-pot-bet {
         display: flex;
+    }
+
+    .roll-center-pot-bet-mobile {
+        padding: 5px;
+        display: none;
+    }
+
+    .roll-reward-active {
+        background: #824e00;
+        color: yellow;
+        font-weight: bold;
+        text-shadow: 0 0 5px #fee71b, 0 0 5px #fee71b, 0 0 2px #fee71b;
+        border: 1px solid #824e00;
+    }
+
+    .current-coin {
+        display: none;
     }
 }
