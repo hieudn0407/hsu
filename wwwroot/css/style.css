@@ -844,13 +844,6 @@ button {
         display: inline-block;
     }
 
-        .roll-center-bet:hover {
-            text-shadow: 0 0 5px #fee71b, 0 0 5px #fee71b, 0 0 2px #fee71b;
-            background: #824e00 !important;
-            color: yellow !important;
-            font-size: 10px;
-        }
-
     .roll-center-bet-active {
         text-shadow: 0 0 5px #fee71b, 0 0 5px #fee71b, 0 0 2px #fee71b;
         background: #824e00 !important;

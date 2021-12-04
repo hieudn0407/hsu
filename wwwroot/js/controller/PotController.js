@@ -6,6 +6,57 @@
     var my_timer = 0;
     var pot_star = 0;
     var auto_roll = 0;
+    var coefficient = {
+        coe_1: 0.5,
+        coe_2: 1.5,
+        coe_3: 5,
+        coe_4: 17.5,
+        coe_5: 60,
+        coe_6: 200,
+        coe_7: 500
+    };
+    $scope.win_coin = {
+        coin_2: {
+            star_1: 2 * coefficient.coe_1,
+            star_2: 2 * coefficient.coe_2,
+            star_3: 2 * coefficient.coe_3,
+            star_4: 2 * coefficient.coe_4,
+            star_5: 2 * coefficient.coe_5,
+            star_6: 2 * coefficient.coe_6,
+            star_7: 2 * coefficient.coe_7
+        },
+        coin_10: {
+            star_1: 10 * coefficient.coe_1,
+            star_2: 10 * coefficient.coe_2,
+            star_3: 10 * coefficient.coe_3,
+            star_4: 10 * coefficient.coe_4,
+            star_5: 10 * coefficient.coe_5,
+            star_6: 10 * coefficient.coe_6,
+            star_7: 10 * coefficient.coe_7
+        },
+        coin_50: {
+            star_1: 50 * coefficient.coe_1,
+            star_2: 50 * coefficient.coe_2,
+            star_3: 50 * coefficient.coe_3,
+            star_4: 50 * coefficient.coe_4,
+            star_5: 50 * coefficient.coe_5,
+            star_6: 50 * coefficient.coe_6,
+            star_7: 50 * coefficient.coe_7
+        },
+        coin_100: {
+            star_1: 100 * coefficient.coe_1,
+            star_2: 100 * coefficient.coe_2,
+            star_3: 100 * coefficient.coe_3,
+            star_4: 100 * coefficient.coe_4,
+            star_5: 100 * coefficient.coe_5,
+            star_6: 100 * coefficient.coe_6,
+            star_7: 100 * coefficient.coe_7
+        },
+    };
+
+   
+
+    $scope.current_coin_coefficient = $scope.win_coin.coin_2;
     $scope.pot_loading = false;
     $scope.pot_bet_coin = 2;
     $scope.is_auto_roll = false;
@@ -64,6 +115,11 @@
         if ($scope.pot_loading == false) {
             var element = document.getElementsByClassName("roll-center-bet");
             var element_mobile = document.getElementsByClassName("rcb-mobile");
+            var element_rra = document.getElementsByClassName("rra");
+
+            for (var i = 0; i < element_rra.length; i++) {
+                element_rra[i].classList.remove("roll-reward-active");
+            }
 
             for (var i = 0; i < element.length; i++) {
                 element[i].classList.remove("roll-center-bet-active");
@@ -80,6 +136,18 @@
             rcb_mobile[0].classList.add("roll-center-bet-active");
 
             $scope.pot_bet_coin = coin;
+            if (coin == 2) {
+                $scope.current_coin_coefficient = $scope.win_coin.coin_2;
+            }
+            else if (coin == 10) {
+                $scope.current_coin_coefficient = $scope.win_coin.coin_10;
+            }
+            else if (coin == 50) {
+                $scope.current_coin_coefficient = $scope.win_coin.coin_50;
+            }
+            else if (coin == 100) {
+                $scope.current_coin_coefficient = $scope.win_coin.coin_100;
+            }
         }
     };
 

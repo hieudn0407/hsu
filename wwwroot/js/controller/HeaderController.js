@@ -90,7 +90,13 @@
     };
 
     $scope.goKeno = () => {
-        connectionAccount.invoke("LoginStatus", global_token).catch(function (err) {
+        connectionAccount.invoke("LoginStatus", global_token, "/doan-so-chan-le").catch(function (err) {
+            return console.error(err.toString());
+        });
+    };
+
+    $scope.goNohu = () => {
+        connectionAccount.invoke("LoginStatus", global_token, "/no-hu").catch(function (err) {
             return console.error(err.toString());
         });
     };
@@ -106,10 +112,10 @@
         }
     });
 
-    connectionAccount.on("CheckLoginStatus", function (response, cookie_token) {
+    connectionAccount.on("CheckLoginStatus", function (response, cookie_token, url) {
         if (response.code == 200) {
             update_token(cookie_token);
-            window.location.href = "/doan-so-chan-le";
+            window.location.href = url;
             return;
         }
         else if (response.code == 201) {
