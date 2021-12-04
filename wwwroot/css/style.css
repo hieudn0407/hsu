@@ -896,6 +896,30 @@ button {
         margin-top: 10px;
     }
 
+    .auto-roll-btn {
+        width: 120px;
+        height: 40px;
+        color: #000;
+        background: #ff8d00;
+        border: none;
+        font-size: 15px;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-top: 10px;
+    }
+
+    .stop-roll-btn {
+        width: 120px;
+        height: 40px;
+        color: #000;
+        background: #cacaca;
+        border: none;
+        font-size: 15px;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-top: 10px;
+    }
+
     .roll-reward-active {
         background: #824e00;
         color: yellow;
