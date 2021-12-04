@@ -5,8 +5,10 @@
     var coin_after = 0;
     var my_timer = 0;
     var pot_star = 0;
+    var auto_roll = 0;
     $scope.pot_loading = false;
     $scope.pot_bet_coin = 2;
+    $scope.is_auto_roll = false;
 
     if (connectionPot.q == "Disconnected") {
         connectionPot.start().then(function () {
@@ -81,10 +83,32 @@
         }
     };
 
+    $scope.goAuto = () => {
+        $scope.is_auto_roll = true;
+        auto_roll = setInterval(function () {
+            $scope.goQuay();
+        }, 1000);
+    };
+
+    $scope.goStop = () => {
+        $scope.is_auto_roll = false;
+        clearInterval(auto_roll);
+    };
+
     connectionPot.on("ReceiveRollPot", function (cookie_token, cell, coin, star) {
         if (cookie_token == null) {
             remove_cookie();
             window.location.reload();
+            return;
+        }
+
+        if (cell == -1) {
+            update_token(cookie_token);
+            clearInterval(auto_roll);
+            $scope.pot_loading = false;
+            $scope.is_auto_roll = false;
+            $scope.$apply();
+            alert("Không đủ <b>Xu</b> để quay.");
             return;
         }
 
