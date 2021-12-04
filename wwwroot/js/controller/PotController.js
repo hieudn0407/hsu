@@ -185,9 +185,9 @@
         roll = 0;
 
         my_timer = setInterval(quay, 50);
-        setTimeout(function () { clearInterval(my_timer); my_timer = setInterval(quay, 100); }, 3000);
-        setTimeout(function () { clearInterval(my_timer); my_timer = setInterval(quay, 150); }, 5000);
-        setTimeout(function () { clearInterval(my_timer); my_timer = setInterval(quay, 200); }, 7000);
-        setTimeout(function () { stop = cell; coin_after = coin; pot_star = star; clearInterval(my_timer); my_timer = setInterval(quay, 250); }, 9000);
+        setTimeout(function () { clearInterval(my_timer); my_timer = setInterval(quay, 130); }, 2000);
+        setTimeout(function () { clearInterval(my_timer); my_timer = setInterval(quay, 160); }, 3000);
+        setTimeout(function () { clearInterval(my_timer); my_timer = setInterval(quay, 190); }, 4000);
+        setTimeout(function () { stop = cell; coin_after = coin; pot_star = star; clearInterval(my_timer); my_timer = setInterval(quay, 210); }, 5000);
     });
 }]);
