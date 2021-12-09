@@ -6,6 +6,33 @@ var connectionPot = new signalR.HubConnectionBuilder().withUrl("/PotHub").build(
 var ALERT_TITLE = "Thông Báo";
 var ALERT_BUTTON_TEXT = "OK";
 
+var slideIndex = 1;
+
+function plusDivs(n) {
+    showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+    showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("slide-item");
+    var dots = document.getElementsByClassName("slide-badge");
+    if (n > x.length) { slideIndex = 1 }
+    if (n < 1) { slideIndex = x.length }
+    for (i = 0; i < x.length; i++) {
+        x[i].classList.add("display-none");
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" slide-badge-active", "");
+    }
+    x[slideIndex - 1].classList.remove("display-none");
+    dots[slideIndex - 1].className += " slide-badge-active";
+}
+
+
 var global_token = {
     value: getCookie("USER"),
     key: getCookie("KEY"),
@@ -22,7 +49,7 @@ function setCookie(name, value, days) {
     var expires = "";
     if (days) {
         var date = new Date();
-        date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+        date.setTime(date.getTime() + 1800000);
         expires = "; expires=" + date.toUTCString();
     }
     document.cookie = name + "=" + (value || "") + expires + ";";
@@ -41,7 +68,6 @@ function getCookie(name) {
 
 function eraseCookie(name) {
     document.cookie = name + '=; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
-
 }
 
 function remove_cookie() {
@@ -56,9 +82,9 @@ function sign_out() {
 }
 
 function update_token(token) {
-    setCookie("USER", token.value, 365);
-    setCookie("KEY", token.key, 365);
-    setCookie("IV", token.iv, 365);
+    setCookie("USER", token.value, 0.021);
+    setCookie("KEY", token.key, 0.021);
+    setCookie("IV", token.iv, 0.021);
 }
 
 function createCustomAlert(txt) {

@@ -3,6 +3,7 @@
     var roll = 0;
     var stop = 0;
     var coin_after = 0;
+    var coin_after_win = 0;
     var my_timer = 0;
     var pot_star = 0;
     var auto_roll = 0;
@@ -54,7 +55,7 @@
         },
     };
 
-   
+
 
     $scope.current_coin_coefficient = $scope.win_coin.coin_2;
     $scope.pot_loading = false;
@@ -86,6 +87,23 @@
             $scope.pot_loading = false;
             $scope.$apply();
             clearInterval(my_timer);
+
+            let elementx = document.getElementById("roll-history");
+            let elementy = document.getElementById("roll-history-mobile");
+
+            let li = document.createElement("li");
+            li.textContent = "→ Nhận Được " + coin_after_win + " Xu";
+            li.classList.add("roll-history-win");
+
+            let li1 = document.createElement("li");
+            li1.textContent = "→ Nhận Được " + coin_after_win + " Xu";
+            li1.classList.add("roll-history-win");
+
+            elementx.append(li);
+            elementy.append(li1);
+
+            elementx.scrollTop = elementx.scrollHeight;
+            elementy.scrollTop = elementy.scrollHeight;
         }
 
         var ele = document.getElementsByClassName("roll-" + roll);
@@ -163,7 +181,7 @@
         clearInterval(auto_roll);
     };
 
-    connectionPot.on("ReceiveRollPot", function (cookie_token, cell, coin, star) {
+    connectionPot.on("ReceiveRollPot", function (cookie_token, cell, coin, star, coin_win) {
         if (cookie_token == null) {
             remove_cookie();
             window.location.reload();
@@ -180,6 +198,23 @@
             return;
         }
 
+        let element = document.getElementById("roll-history");
+        let element1 = document.getElementById("roll-history-mobile");
+
+        let li = document.createElement("li");
+        li.textContent = "Đặt Cược " + $scope.pot_bet_coin + " Xu";
+        li.classList.add("roll-history-bet");
+
+        let li1 = document.createElement("li");
+        li1.textContent = "Đặt Cược " + $scope.pot_bet_coin + " Xu";
+        li1.classList.add("roll-history-bet");
+
+        element1.append(li1);
+        element.append(li);
+
+        element.scrollTop = element.scrollHeight;
+        element1.scrollTop = element1.scrollHeight;
+
         update_token(cookie_token);
         stop = -1;
         roll = 0;
@@ -188,6 +223,13 @@
         setTimeout(function () { clearInterval(my_timer); my_timer = setInterval(quay, 130); }, 2000);
         setTimeout(function () { clearInterval(my_timer); my_timer = setInterval(quay, 160); }, 3000);
         setTimeout(function () { clearInterval(my_timer); my_timer = setInterval(quay, 190); }, 4000);
-        setTimeout(function () { stop = cell; coin_after = coin; pot_star = star; clearInterval(my_timer); my_timer = setInterval(quay, 210); }, 5000);
+        setTimeout(function () {
+            stop = cell;
+            coin_after = coin;
+            pot_star = star;
+            coin_after_win = coin_win;
+            clearInterval(my_timer);
+            my_timer = setInterval(quay, 210);
+        }, 5000);
     });
 }]);

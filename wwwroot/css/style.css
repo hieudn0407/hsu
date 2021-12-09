@@ -11,6 +11,10 @@ body {
     background-image: url(/image/bg.jpg);
 }
 
+.footer-bar{
+    display: none;
+}
+
 a {
     text-decoration: none;
 }
@@ -18,6 +22,27 @@ a {
 .font-weight-bold {
     font-weight: bold;
     color: #3cc580d6;
+}
+
+.roll-history-mobile-view{
+    display: none;
+}
+
+.scrollbar-style::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    background-color: #F5F5F5;
+}
+
+.scrollbar-style::-webkit-scrollbar {
+    width: 5px;
+    background-color: #F5F5F5;
+}
+
+.scrollbar-style::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: #824e00;
 }
 
 #modalContainer {
@@ -650,26 +675,26 @@ button {
     }
 
     .roll-container {
-        width: 300px;
-        height: 300px;
+        width: 300px !important;
+        height: 300px !important;
         display: inline-block;
         background: #824e00;
         border: 1px solid #824e00;
     }
 
     .roll {
-        width: 42px;
-        height: 42px;
+        width: 42px !important;
+        height: 42px !important;
         border: 1px solid #d0b600;
-        margin: 3px;
-        padding: 0px;
-        font-size: 10px;
+        margin: 3px !important;
+        padding: 0px !important;
+        font-size: 10px !important;
         display: grid;
         align-items: center;
     }
 
         .roll img {
-            width: 40px;
+            width: 40px !important;
         }
 
     .active {
@@ -681,8 +706,8 @@ button {
     }
 
     .roll-body {
-        width: 50px;
-        height: 50px;
+        width: 50px !important;
+        height: 50px !important;
         float: left;
     }
 
@@ -694,130 +719,131 @@ button {
 
     .roll-1 {
         position: absolute;
-        left: 50px;
+        left: 50px !important;
     }
 
     .roll-2 {
         position: absolute;
-        left: 100px;
+        left: 100px !important;
     }
 
     .roll-3 {
         position: absolute;
-        left: 150px;
+        left: 150px !important;
     }
 
     .roll-4 {
         position: absolute;
-        left: 200px;
+        left: 200px !important;
     }
 
     .roll-5 {
         position: absolute;
-        left: 250px;
+        left: 250px !important;
     }
 
     .roll-6 {
         position: absolute;
-        left: 250px;
-        top: 50px;
+        left: 250px !important;
+        top: 50px !important;
     }
 
     .roll-7 {
         position: absolute;
-        left: 250px;
-        top: 100px;
+        left: 250px !important;
+        top: 100px !important;
     }
 
     .roll-8 {
         position: absolute;
-        left: 250px;
-        top: 150px;
+        left: 250px !important;
+        top: 150px !important;
     }
 
     .roll-9 {
         position: absolute;
-        left: 250px;
-        top: 200px;
+        left: 250px !important;
+        top: 200px !important;
     }
 
     .roll-10 {
         position: absolute;
-        left: 250px;
-        top: 250px;
+        left: 250px !important;
+        top: 250px !important;
     }
 
     .roll-11 {
         position: absolute;
-        left: 200px;
-        top: 250px;
+        left: 200px !important;
+        top: 250px !important;
     }
 
     .roll-12 {
         position: absolute;
-        left: 150px;
-        top: 250px;
+        left: 150px !important;
+        top: 250px !important;
     }
 
     .roll-13 {
         position: absolute;
-        left: 100px;
-        top: 250px;
+        left: 100px !important;
+        top: 250px !important;
     }
 
     .roll-14 {
         position: absolute;
-        left: 50px;
-        top: 250px;
+        left: 50px !important;
+        top: 250px !important;
     }
 
     .roll-15 {
         position: absolute;
-        left: 0;
-        top: 250px;
+        left: 0 !important;
+        top: 250px !important;
     }
 
     .roll-16 {
         position: absolute;
-        left: 0;
-        top: 200px;
+        left: 0 !important;
+        top: 200px !important;
     }
 
     .roll-17 {
         position: absolute;
-        left: 0;
-        top: 150px;
+        left: 0 !important;
+        top: 150px !important;
     }
 
     .roll-18 {
         position: absolute;
-        left: 0;
-        top: 100px;
+        left: 0 !important;
+        top: 100px !important;
     }
 
     .roll-19 {
         position: absolute;
-        left: 0;
-        top: 50px;
+        left: 0 !important;
+        top: 50px !important;
     }
 
     .roll-center-body {
         background: #ffedc3;
-        width: 200px;
-        height: 200px;
+        width: 200px !important;
+        height: 200px !important;
         float: left;
-        margin: 50px;
+        margin: 50px !important;
         text-align: left;
         position: relative;
     }
 
     .roll-center-pot-bet {
-        display: none;
+        display: none !important;
         padding: 5px;
     }
 
     .roll-center-pot-bet-mobile {
         padding: 5px;
+        display: block !important;
     }
 
     .roll-center-reward {
@@ -831,15 +857,15 @@ button {
     }
 
     .roll-center-bet {
-        width: 55px;
-        height: 10px;
-        padding: 10px;
-        background: #797979;
+        width: 55px !important;
+        height: 10px !important;
+        padding: 10px !important;
+        background: #797979 !important;
         text-align: center;
         user-select: none;
         font-weight: bold;
         color: white;
-        font-size: 10px;
+        font-size: 10px !important;
         cursor: pointer;
         display: inline-block;
     }
@@ -878,11 +904,11 @@ button {
     }
 
     .roll-btn {
-        width: 120px;
-        height: 40px;
+        width: 120px !important;
+        height: 40px !important;
         color: #fff;
         background: #f00;
-        font-size: 15px;
+        font-size: 15px !important;
         font-weight: bold;
         text-transform: uppercase;
         border: none;
@@ -890,20 +916,20 @@ button {
     }
 
     .auto-roll-btn {
-        width: 120px;
-        height: 40px;
+        width: 120px !important;
+        height: 40px !important;
         color: #000;
         background: #ff8d00;
         border: none;
-        font-size: 15px;
+        font-size: 15px !important;
         font-weight: bold;
         text-transform: uppercase;
         margin-top: 10px;
     }
 
     .stop-roll-btn {
-        width: 120px;
-        height: 40px;
+        width: 120px !important;
+        height: 40px !important;
         color: #000;
         background: #cacaca;
         border: none;
@@ -933,6 +959,122 @@ button {
             top: 3px;
             margin-left: 5px;
         }
+
+    .slide-item {
+        height: 200px;
+        background: #ffe9db;
+    }
+
+    .slide-badge-tag {
+        position: absolute;
+        bottom: 10px;
+        right: 0;
+        left: 0;
+        text-align: center;
+        display: inline-block;
+    }
+
+    .slide-badge {
+        cursor: pointer;
+        width: 50px;
+        height: 10px;
+        content: "";
+        display: inline-flex;
+        clear: both;
+        border: 1px solid #925731;
+        box-shadow: 0 0 5px #000;
+        border-radius: 5px;
+        background: #9257311f;
+        margin: 0 5px 0px 5px;
+    }
+
+    .slide-badge-active {
+        background: #ff6400;
+    }
+
+    .display-none {
+        display: none;
+    }
+
+    .bg-1 {
+        background: #ffe9db;
+    }
+
+    .bg-2 {
+        background: #ffd6d6;
+    }
+
+    .bg-3 {
+        background: #c3deff;
+    }
+
+    .home-top-game {
+        height: 200px;
+        background: #ffe9db;
+        margin: 5px;
+    }
+
+    .home-top-player {
+        height: 200px;
+        background: #ffe9db;
+        margin: 5px;
+    }
+
+    .top-game-title {
+        padding: 11px;
+        font-weight: bold;
+        color: yellow;
+        background: #925731;
+    }
+
+    .top-player-title {
+        padding: 11px;
+        font-weight: bold;
+        color: yellow;
+        background: #925731;
+    }
+
+    .home-top-content {
+        margin-top: 00px;
+        height: auto;
+    }
+
+    .roll-history-container {
+        display: none;
+    }
+
+    .top-history-container{
+        display: none;
+    }
+
+    .roll-history-body {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        height: 200px;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
+    .roll-history-bet {
+        padding: 10px 0px 5px 10px;
+        color: #ff7600;
+        font-weight: bold;
+        font-size: 12px;
+        text-align: left;
+    }
+
+    .roll-history-win {
+        padding: 0px 0px 10px 10px;
+        color: #ffd400;
+        font-weight: bold;
+        font-size: 12px;
+        text-align: left;
+    }
+
+    .roll-history-mobile-view {
+        display: flex;
+    }
 }
 
 /*máy tính bảng, chiều dọc*/
@@ -1286,6 +1428,286 @@ button {
         border-right: 1px solid #925731;
         background: #925731;
         color: #ffe18e;
+    }
+
+    .roll-container {
+        width: 600px;
+        height: 600px;
+        display: inline-block;
+        background: #824e00;
+        border: 1px solid #824e00;
+    }
+
+    .roll {
+        width: 58px;
+        height: 58px;
+        border: 1px solid #d0b600;
+        margin: 10px;
+        padding: 10px;
+        font-size: 15px;
+        display: grid;
+        align-items: center;
+    }
+
+        .roll img {
+            width: 58px;
+        }
+
+    .active {
+        background: #ffc800;
+    }
+
+    .active-result {
+        background: yellow !important;
+    }
+
+    .roll-body {
+        width: 100px;
+        height: 100px;
+        float: left;
+    }
+
+
+    .roll-0 {
+        position: absolute;
+        left: 0;
+    }
+
+    .roll-1 {
+        position: absolute;
+        left: 100px;
+    }
+
+    .roll-2 {
+        position: absolute;
+        left: 200px;
+    }
+
+    .roll-3 {
+        position: absolute;
+        left: 300px;
+    }
+
+    .roll-4 {
+        position: absolute;
+        left: 400px;
+    }
+
+    .roll-5 {
+        position: absolute;
+        left: 500px;
+    }
+
+    .roll-6 {
+        position: absolute;
+        left: 500px;
+        top: 100px;
+    }
+
+    .roll-7 {
+        position: absolute;
+        left: 500px;
+        top: 200px;
+    }
+
+    .roll-8 {
+        position: absolute;
+        left: 500px;
+        top: 300px;
+    }
+
+    .roll-9 {
+        position: absolute;
+        left: 500px;
+        top: 400px;
+    }
+
+    .roll-10 {
+        position: absolute;
+        left: 500px;
+        top: 500px;
+    }
+
+    .roll-11 {
+        position: absolute;
+        left: 400px;
+        top: 500px;
+    }
+
+    .roll-12 {
+        position: absolute;
+        left: 300px;
+        top: 500px;
+    }
+
+    .roll-13 {
+        position: absolute;
+        left: 200px;
+        top: 500px;
+    }
+
+    .roll-14 {
+        position: absolute;
+        left: 100px;
+        top: 500px;
+    }
+
+    .roll-15 {
+        position: absolute;
+        left: 0;
+        top: 500px;
+    }
+
+    .roll-16 {
+        position: absolute;
+        left: 0;
+        top: 400px;
+    }
+
+    .roll-17 {
+        position: absolute;
+        left: 0;
+        top: 300px;
+    }
+
+    .roll-18 {
+        position: absolute;
+        left: 0;
+        top: 200px;
+    }
+
+    .roll-19 {
+        position: absolute;
+        left: 0;
+        top: 100px;
+    }
+
+    .roll-center-body {
+        background: #ffedc3;
+        width: 400px;
+        height: 400px;
+        float: left;
+        margin: 100px;
+        text-align: left;
+        position: relative;
+    }
+
+    .roll-center-reward {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+    }
+
+    .roll-center-bet {
+        width: 100px;
+        height: 15px;
+        padding: 15px;
+        background: #797979;
+        margin: 0 5px 0 5px;
+        text-align: center;
+        user-select: none;
+        font-weight: bold;
+        color: white;
+        font-size: 15px;
+        cursor: pointer;
+    }
+
+        .roll-center-bet:hover {
+            text-shadow: 0 0 5px #fee71b, 0 0 5px #fee71b, 0 0 2px #fee71b;
+            background: #824e00 !important;
+            color: yellow !important;
+            font-size: 16px;
+        }
+
+    .roll-center-bet-active {
+        text-shadow: 0 0 5px #fee71b, 0 0 5px #fee71b, 0 0 2px #fee71b;
+        background: #824e00 !important;
+        color: yellow !important;
+        font-size: 16px;
+    }
+
+    .roll-center-result {
+        position: absolute;
+        right: 5px;
+        top: 10px;
+    }
+
+    .border-ffb100 {
+        border: 1px solid #ffedc3;
+    }
+
+    .roll-cell-1 {
+        font-size: 25px;
+    }
+
+    .roll-cell-2 {
+        font-size: 20px;
+    }
+
+    .roll-cell-3 {
+        font-size: 15px;
+    }
+
+    .roll-cell-4 {
+        font-size: 20px;
+    }
+
+    .roll-btn {
+        width: 150px;
+        height: 50px;
+        color: white;
+        background: red;
+        border: none;
+        font-size: 15px;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-top: 10px;
+    }
+
+    .roll-center-pot-bet {
+        display: flex;
+    }
+
+    .roll-center-pot-bet-mobile {
+        padding: 5px;
+        display: none;
+    }
+
+    .roll-reward-active {
+        background: #824e00;
+        color: yellow;
+        font-weight: bold;
+        text-shadow: 0 0 5px #fee71b, 0 0 5px #fee71b, 0 0 2px #fee71b;
+        border: 1px solid #824e00;
+    }
+
+    .current-coin {
+        display: block;
+    }
+
+    .auto-roll-btn {
+        width: 150px;
+        height: 50px;
+        color: #000;
+        background: #ff8d00;
+        border: none;
+        font-size: 15px;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-top: 10px;
+    }
+
+    .stop-roll-btn {
+        width: 150px;
+        height: 50px;
+        color: #000;
+        background: #cacaca;
+        border: none;
+        font-size: 15px;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-top: 10px;
     }
 }
 
@@ -2049,5 +2471,143 @@ button {
         font-weight: bold;
         text-transform: uppercase;
         margin-top: 10px;
+    }
+
+    .slide-item {
+        height: 500px;
+        background: #ffe9db;
+    }
+
+    .slide-badge-tag {
+        position: absolute;
+        bottom: 10px;
+        right: 0;
+        left: 0;
+        text-align: center;
+        display: inline-block;
+    }
+
+    .slide-badge {
+        cursor: pointer;
+        width: 50px;
+        height: 10px;
+        content: "";
+        display: inline-flex;
+        clear: both;
+        border: 1px solid #925731;
+        box-shadow: 0 0 5px #000;
+        border-radius: 5px;
+        background: #9257311f;
+        margin: 0 5px 0px 5px;
+    }
+
+    .slide-badge-active {
+        background: #ff6400;
+    }
+
+    .display-none {
+        display: none;
+    }
+
+    .bg-1 {
+        background: #ffe9db;
+    }
+
+    .bg-2 {
+        background: #ffd6d6;
+    }
+
+    .bg-3 {
+        background: #c3deff;
+    }
+
+    .home-top-game {
+        width: 590px;
+        height: 290px;
+        margin: 5px;
+        float: left;
+        background: #ffe9db;
+    }
+
+    .home-top-player {
+        width: 590px;
+        height: 290px;
+        margin: 5px;
+        float: left;
+        background: #ffe9db;
+    }
+
+    .top-game-title {
+        padding: 10px;
+        font-weight: bold;
+        color: yellow;
+        background: #925731;
+    }
+
+    .top-player-title {
+        padding: 10px;
+        font-weight: bold;
+        color: yellow;
+        background: #925731;
+    }
+
+    .home-top-content {
+        margin-top: 10px;
+        height: 300px;
+    }
+
+    .roll-history-container {
+        width: 250px;
+        height: 600px;
+        display: inline-block;
+        text-align: left;
+        position: absolute;
+        left: -255px;
+        background: #482800;
+    }
+
+    .top-history-container {
+        width: 250px;
+        height: 600px;
+        display: inline-block;
+        text-align: left;
+        position: absolute;
+        right: -255px;
+        background: #482800;
+    }
+
+    .roll-history-title {
+        padding: 10px;
+        font-weight: bold;
+        background: #824e00;
+        color: yellow;
+        text-align: center;
+    }
+
+    .roll-history-body {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        height: 562px;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
+    .roll-history-bet {
+        padding: 10px 0px 5px 10px;
+        color: #ff7600;
+        font-weight: bold;
+        font-size: 15px;
+    }
+
+    .roll-history-win {
+        padding: 0px 0px 10px 10px;
+        color: #ffd400;
+        font-weight: bold;
+        font-size: 15px;
+    }
+
+    .footer-bar {
+        display: block;
     }
 }
