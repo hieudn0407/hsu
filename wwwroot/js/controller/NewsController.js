@@ -98,7 +98,7 @@
                 "uploadUrl": "/upload-file",
                 "destroy": { "url": "/delete" },
                 "create": { "url": "/create-folder" },
-                "imageUrl": "https://localhost:44364/image/{0}"
+                "imageUrl": "/image/{0}"
             }
         }
     });
