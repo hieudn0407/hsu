@@ -98,7 +98,7 @@
                 "uploadUrl": "/upload-file",
                 "destroy": { "url": "/delete" },
                 "create": { "url": "/create-folder" },
-                "imageUrl": "/image/{0}"
+                "imageUrl": "http://147.182.228.10/image/{0}"
             }
         }
     });
