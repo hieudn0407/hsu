@@ -2,6 +2,7 @@
 var connection = new signalR.HubConnectionBuilder().withUrl("/KenoHub").build();
 var connectionAccount = new signalR.HubConnectionBuilder().withUrl("/AccountHub").build();
 var connectionPot = new signalR.HubConnectionBuilder().withUrl("/PotHub").build();
+var connectionNews = new signalR.HubConnectionBuilder().withUrl("/NewsHub").build();
 
 var ALERT_TITLE = "Thông Báo";
 var ALERT_BUTTON_TEXT = "OK";

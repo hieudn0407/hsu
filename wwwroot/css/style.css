@@ -1085,6 +1085,26 @@ button {
         display: flex;
     }
 
+    .top-game-body {
+        height: 160px;
+        overflow: auto;
+    }
+
+    .top-game-item {
+        height: 40px;
+        padding: 5px;
+    }
+
+        .top-game-item span {
+            position: absolute;
+            top: 20px;
+            left: 60px;
+        }
+
+        .top-game-item img {
+            width: 40px;
+        }
+
     .footer-bar-mobile {
         display: block;
     }
@@ -2465,6 +2485,7 @@ button {
         margin: -5px;
         margin-top: 7px;
         font-family: 'Helvetica Neue', sans-serif;
+        position: relative;
     }
 
     .tag-user-account:hover .dropdown-user-account {
@@ -2957,14 +2978,14 @@ button {
     }
 
     .top-game-title {
-        padding: 10px;
+        padding: 11px;
         font-weight: bold;
         color: yellow;
         background: #925731;
     }
 
     .top-player-title {
-        padding: 10px;
+        padding: 11px;
         font-weight: bold;
         color: yellow;
         background: #925731;
@@ -3025,6 +3046,28 @@ button {
         font-weight: bold;
         font-size: 15px;
     }
+
+    .top-game-body {
+        height: 255px;
+        overflow: auto;
+    }
+
+    .top-game-item {
+        height: 70px;
+        padding: 5px;
+    }
+
+        .top-game-item span {
+            position: absolute;
+            top: 35px;
+            left: 100px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .top-game-item img {
+            width: 70px;
+        }
 
     .footer-bar {
         display: block;
