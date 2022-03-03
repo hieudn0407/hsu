@@ -9,6 +9,41 @@ var ALERT_BUTTON_TEXT = "OK";
 
 var slideIndex = 1;
 
+function disabledEvent(e) {
+    //if (e.stopPropagation) {
+    //    e.stopPropagation();
+    //} else if (window.event) {
+    //    window.event.cancelBubble = true;
+    //}
+    //e.preventDefault();
+    //return false;
+}
+
+document.addEventListener("contextmenu", function (e) {
+    e.preventDefault();
+}, false);
+
+document.addEventListener("keydown", function (e) {
+    if (e.ctrlKey && e.shiftKey && e.keyCode == 67) {
+        disabledEvent(e);
+    }
+    if (e.ctrlKey && e.shiftKey && e.keyCode == 73) {
+        disabledEvent(e);
+    }
+    if (e.ctrlKey && e.shiftKey && e.keyCode == 74) {
+        disabledEvent(e);
+    }
+    if (e.keyCode == 83 && (navigator.platform.match("Mac") ? e.metaKey : e.ctrlKey)) {
+        disabledEvent(e);
+    }
+    if (e.ctrlKey && e.keyCode == 85) {
+        disabledEvent(e);
+    }
+    if (event.keyCode == 123) {
+        disabledEvent(e);
+    }
+}, false);
+
 function plusDivs(n) {
     showDivs(slideIndex += n);
 }
@@ -33,6 +68,9 @@ function showDivs(n) {
     dots[slideIndex - 1].className += " slide-badge-active";
 }
 
+setInterval(function () {
+    plusDivs(1);
+}, 5000);
 
 var global_token = {
     value: getCookie("USER"),

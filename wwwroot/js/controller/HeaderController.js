@@ -3,6 +3,18 @@
     $scope.RegisterModal = false;
     $scope.Notification = false;
 
+    function Init() {
+        $http.get("/topbar").then(function (response) {
+            var rs = response.data.data.data;
+            if (rs.status) {
+                $scope.TopBar = rs.data[0];
+                console.log(rs.data[0]);
+            }
+        })
+    }
+
+    Init();
+
     if (connectionAccount.q == "Disconnected") {
         connectionAccount.start().then(function () {
         }).catch(function (err) {

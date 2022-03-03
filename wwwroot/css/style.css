@@ -6,9 +6,9 @@ html {
 
 body {
     font-family: 'Helvetica Neue', sans-serif;
-    background: #4e270d;
+    background: #f4f4f4;
     margin: 0;
-    background-image: url(/image/bg.jpg);
+    /*background-image: url(/image/bg.jpg);*/
 }
 
 .footer-bar {
@@ -19,6 +19,10 @@ body {
     display: none;
 }
 
+.height-50 {
+    height: 50px;
+}
+
 .footer-bar-mobile {
     height: 50px;
     display: none;
@@ -26,6 +30,7 @@ body {
 
 a {
     text-decoration: none;
+    color: unset;
 }
 
 .font-weight-bold {
@@ -33,7 +38,7 @@ a {
     color: #3cc580d6;
 }
 
-.roll-history-mobile-view{
+.roll-history-mobile-view {
     display: none;
 }
 
@@ -52,6 +57,10 @@ a {
     border-radius: 10px;
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
     background-color: #824e00;
+}
+
+.banner div img {
+    width: 100%;
 }
 
 #modalContainer {
@@ -274,9 +283,55 @@ button {
         margin-left: auto;
     }
 
+    .product-item {
+        padding: 5px 0 0 0px;
+        background: #ffe9db;
+    }
+
+    .product-info {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .product-detail {
+        padding: 15px 1% 15px 1%;
+        position: relative;
+        width: 48%;
+    }
+
+    .product-image {
+        width: 100%;
+    }
+
+    .product-new {
+        position: absolute;
+        right: 5px;
+        top: 20px;
+        width: 35px;
+    }
+
+    .product-name {
+        font-size: 13px;
+        font-weight: bolder;
+        margin-top: 5px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 90%;
+        color: #ff8100;
+    }
+
+    .product-saleprice {
+        font-size: 15px;
+        font-weight: bolder;
+        margin-top: 5px;
+        font-family: cursive;
+        color: #ff2f00;
+    }
+
     .home-name {
         position: absolute;
-        top: 10px;
+        top: 40px !important;
         left: 110px;
         color: #efff00;
         font-size: 25px;
@@ -285,6 +340,30 @@ button {
     }
 
     .header-menu-top {
+        display: none;
+    }
+
+    .topbar-body {
+        height: 32px;
+    }
+
+        .topbar-body img {
+            width: 100%;
+        }
+
+    .topbar-img-mobile {
+        display: block;
+    }
+
+    .topbar-img-desktop {
+        display: none;
+    }
+
+    .banner-mobile {
+        display: block;
+    }
+
+    .banner-desktop {
         display: none;
     }
 
@@ -970,13 +1049,12 @@ button {
         }
 
     .slide-item {
-        height: 200px;
         background: #ffe9db;
     }
 
     .slide-badge-tag {
         position: absolute;
-        bottom: 10px;
+        bottom: 30px;
         right: 0;
         left: 0;
         text-align: center;
@@ -1034,6 +1112,7 @@ button {
         font-weight: bold;
         color: yellow;
         background: #925731;
+        background-image: linear-gradient(to right,#5e0101,#660101,#6d0101,#750101,#7d0101,#850303,#8e0404,#960606,#a00909,#ab0b0b,#b50d0d,#c00e0e);
     }
 
     .top-player-title {
@@ -1052,7 +1131,7 @@ button {
         display: none;
     }
 
-    .top-history-container{
+    .top-history-container {
         display: none;
     }
 
@@ -1144,7 +1223,7 @@ button {
 
     .home-name {
         position: absolute;
-        top: 10px;
+        top: 70px;
         left: 110px;
         color: #efff00;
         font-size: 25px;
@@ -1183,6 +1262,69 @@ button {
         /*width: 480px;*/
         margin: auto;
         height: 100%;
+    }
+
+    .product-item {
+        padding: 5px 0 0 0px;
+        background: #ffe9db;
+    }
+
+    .product-info {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .product-detail {
+        padding: 15px 1% 15px 1%;
+        position: relative;
+        width: 48%;
+    }
+
+    .product-image {
+        width: 100%;
+    }
+
+    .product-new {
+        position: absolute;
+        right: 5px;
+        top: 20px;
+        width: 35px;
+    }
+
+    .product-name {
+        font-size: 13px;
+        font-weight: bolder;
+        margin-top: 5px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 90%;
+        color: #ff8100;
+    }
+
+    .product-saleprice {
+        font-size: 15px;
+        font-weight: bolder;
+        margin-top: 5px;
+        font-family: cursive;
+        color: #ff2f00;
+    }
+
+    .topbar-img-mobile {
+        width: 100%;
+        display: block;
+    }
+
+    .topbar-img-desktop {
+        display: none;
+    }
+
+    .banner-mobile {
+        display: block;
+    }
+
+    .banner-desktop {
+        display: none;
     }
 
     .header-body {
@@ -1681,7 +1823,6 @@ button {
         }
 
     .slide-item {
-        height: 200px;
         background: #ffe9db;
     }
 
@@ -1745,6 +1886,7 @@ button {
         font-weight: bold;
         color: yellow;
         background: #925731;
+        background-image: linear-gradient(to right,#5e0101,#660101,#6d0101,#750101,#7d0101,#850303,#8e0404,#960606,#a00909,#ab0b0b,#b50d0d,#c00e0e);
     }
 
     .top-player-title {
@@ -2168,6 +2310,74 @@ button {
         /*width: 1200px;
         margin: auto;
         height: 100%;*/
+    }
+
+    .topbar-body {
+        height: 37.5px;
+    }
+
+        .topbar-body img {
+            width: 100%;
+        }
+
+    .topbar-img-mobile {
+        display: none;
+    }
+
+    .topbar-img-desktop {
+        display: block;
+    }
+
+    .banner-mobile {
+        display: none;
+    }
+
+    .product-item {
+        padding: 5px 0 0 0px;
+        background: #ffe9db;
+    }
+
+    .product-info {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .product-detail {
+        padding: 15px 0px 15px 4px;
+        position: relative;
+    }
+
+    .product-image {
+        width: 295px;
+    }
+
+    .product-new {
+        position: absolute;
+        right: 0;
+        width: 60px;
+    }
+
+    .product-name {
+        font-size: 13px;
+        font-weight: bolder;
+        margin-top: 5px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 290px;
+        color: #ff8100;
+    }
+
+    .product-saleprice {
+        font-size: 15px;
+        font-weight: bolder;
+        margin-top: 5px;
+        font-family: cursive;
+        color: #ff2f00;
+    }
+
+    .banner-desktop {
+        display: block;
     }
 
     .loading {
@@ -2914,7 +3124,6 @@ button {
     }
 
     .slide-item {
-        height: 500px;
         background: #ffe9db;
     }
 
@@ -2982,6 +3191,7 @@ button {
         font-weight: bold;
         color: yellow;
         background: #925731;
+        background-image: linear-gradient(to right,#5e0101,#660101,#6d0101,#750101,#7d0101,#850303,#8e0404,#960606,#a00909,#ab0b0b,#b50d0d,#c00e0e);
     }
 
     .top-player-title {
