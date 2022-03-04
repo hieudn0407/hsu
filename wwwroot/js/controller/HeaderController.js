@@ -8,7 +8,6 @@
             var rs = response.data.data.data;
             if (rs.status) {
                 $scope.TopBar = rs.data[0];
-                console.log(rs.data[0]);
             }
         })
     }
